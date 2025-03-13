@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Calendar, GraduationCap, Briefcase, Search, Headset } from 'lucide-react';
+import { Calendar, GraduationCap, Briefcase, Search, Headset, FileDown } from 'lucide-react';
 
 interface TimelineItem {
   id: number;
@@ -73,6 +72,15 @@ const About = () => {
           <p className="section-subheading">
             Je m'appelle Bemba KEBE, j'ai 19 ans et je suis né en 2005. Je suis actuellement étudiant en BTS SIO option SLAM à Massy.
           </p>
+          
+          <div className="mt-6">
+            <Button className="button-primary" asChild>
+              <a href="https://preview--cv-adaptor-optimizer.lovable.app" target="_blank" rel="noopener noreferrer">
+                <FileDown className="mr-2 h-4 w-4" />
+                Télécharger mon CV
+              </a>
+            </Button>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 mt-12">
@@ -212,8 +220,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
-        {/* CV download button removed as requested */}
       </div>
     </section>
   );
