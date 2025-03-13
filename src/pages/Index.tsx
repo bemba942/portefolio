@@ -8,6 +8,7 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import { ArrowDown, Download, Github, Mail, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { toast } from "@/components/ui/use-toast";
 
 const Index = () => {
   useEffect(() => {
@@ -33,18 +34,44 @@ const Index = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Fonction pour télécharger le code source
+  // Fonction pour télécharger le portfolio
   const handleDownload = () => {
-    // URL vers un fichier ZIP du portfolio (à remplacer par votre URL réelle)
-    const portfolioZipUrl = '/portfolio-bemba-kebe.zip';
+    try {
+      // URL vers un fichier ZIP du portfolio (à remplacer par votre URL réelle)
+      const portfolioZipUrl = '/portfolio-bemba-kebe.zip';
+      
+      // Créer un élément a temporaire pour déclencher le téléchargement
+      const link = document.createElement('a');
+      link.href = portfolioZipUrl;
+      link.download = 'portfolio-bemba-kebe.zip';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      // Afficher une notification de succès
+      toast({
+        title: "Téléchargement démarré",
+        description: "Votre portfolio est en cours de téléchargement",
+      });
+    } catch (error) {
+      // En cas d'erreur, afficher une notification
+      toast({
+        variant: "destructive",
+        title: "Erreur de téléchargement",
+        description: "Impossible de télécharger le portfolio pour le moment",
+      });
+    }
+  };
+
+  // Fonction pour la publication
+  const handlePublish = () => {
+    // Ouvrir une nouvelle fenêtre avec des instructions de publication
+    window.open('https://app.netlify.com/drop', '_blank');
     
-    // Créer un élément a temporaire pour déclencher le téléchargement
-    const link = document.createElement('a');
-    link.href = portfolioZipUrl;
-    link.download = 'portfolio-bemba-kebe.zip';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    toast({
+      title: "Publication facile avec Netlify Drop",
+      description: "Glissez-déposez le dossier du portfolio téléchargé pour publier votre site",
+    });
   };
 
   return (
@@ -86,7 +113,11 @@ const Index = () => {
                 </Button>
                 <Button variant="secondary" onClick={handleDownload}>
                   <Download className="mr-2 h-4 w-4" />
-                  Télécharger CV
+                  Télécharger portfolio
+                </Button>
+                <Button variant="destructive" onClick={handlePublish}>
+                  <Download className="mr-2 h-4 w-4" />
+                  Publier en ligne
                 </Button>
               </div>
               
