@@ -18,7 +18,7 @@ const timelineItems: TimelineItem[] = [
     id: 1,
     title: "BTS SIO option SLAM",
     organization: "Lycée Parc Vilgénis à Massy",
-    period: "2020 - Présent",
+    period: "Depuis 2023",
     description: "Formation en Services Informatiques aux Organisations, spécialité Solutions Logicielles et Applications Métiers.",
     type: "education"
   },
