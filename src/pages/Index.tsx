@@ -48,30 +48,19 @@ const Index = () => {
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80')] bg-fixed bg-cover opacity-[0.03]"></div>
         
         <div className="container px-6 relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="md:order-2 animate-fade-left">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent mix-blend-overlay"></div>
-                <img 
-                  src="/lovable-uploads/7bb3e84e-012c-4146-be8c-11e02b022fab.png" 
-                  alt="Bemba KEBE" 
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </div>
-            
-            <div className="text-center md:text-left space-y-6 animate-fade-right">
+          <div className="grid md:grid-cols-1 gap-12 items-center">
+            <div className="text-center space-y-6 animate-fade-up">
               <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary animate-pulse">
                 Étudiant BTS SIO option SLAM
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
                 Bonjour, je suis <span className="text-primary">Bemba KEBE</span>
               </h1>
-              <p className="text-xl text-muted-foreground max-w-lg">
+              <p className="text-xl text-muted-foreground max-w-lg mx-auto">
                 Étudiant en BTS SIO et passionné par la sécurité informatique, les réseaux et le développement d'applications. Mon état d'esprit positif et enthousiaste me pousse à me dépasser et à poursuivre mes objectifs avec passion et détermination.
               </p>
               
-              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+              <div className="flex flex-wrap gap-4 justify-center">
                 <Button className="button-primary" asChild>
                   <a href="#contact">
                     <Mail className="mr-2 h-4 w-4" />
@@ -85,7 +74,7 @@ const Index = () => {
                 </Button>
               </div>
               
-              <div className="flex items-center gap-4 justify-center md:justify-start mt-8">
+              <div className="flex items-center gap-4 justify-center mt-8">
                 <a
                   href="http://bemba942.github.io/projet/"
                   className="text-muted-foreground hover:text-foreground transition-colors"
