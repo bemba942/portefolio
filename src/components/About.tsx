@@ -17,41 +17,41 @@ const timelineItems: TimelineItem[] = [
   {
     id: 1,
     title: "BTS SIO option SLAM",
-    organization: "Lycée / Centre de formation",
-    period: "2022 - Présent",
+    organization: "Collège Rosa Parks",
+    period: "2020 - Présent",
     description: "Formation en Services Informatiques aux Organisations, spécialité Solutions Logicielles et Applications Métiers.",
     type: "education"
   },
   {
     id: 2,
-    title: "Baccalauréat",
-    organization: "Lycée",
-    period: "2021 - 2022",
-    description: "Obtention du baccalauréat avec mention.",
+    title: "Baccalauréat Technologie",
+    organization: "Lycée polyvalent de Cachan",
+    period: "2022 - 2023",
+    description: "Obtention du baccalauréat.",
     type: "education"
   },
   {
     id: 3,
-    title: "Stage en développement",
-    organization: "Entreprise d'accueil",
-    period: "2023",
-    description: "Développement d'applications métier pour l'entreprise, mise en place de bases de données, maintenance et support.",
-    type: "internship"
+    title: "Brevet",
+    organization: "Collège Rosa Parks",
+    period: "2019 - 2020",
+    description: "Obtention du brevet avec mention bien.",
+    type: "education"
   },
   {
     id: 4,
-    title: "Job étudiant",
-    organization: "Entreprise locale",
-    period: "Été 2022",
-    description: "Assistance technique et support utilisateur. Maintenance du parc informatique.",
-    type: "experience"
+    title: "Stage agent polyvalent",
+    organization: "La banque Postale Paris Pernety Plaisance",
+    period: "Décembre 2019 - Janvier 2020",
+    description: "Ouverture des comptes courants, réalisation des simulations des prêts immobiliers, réalisations actions commerciales, préparation des rdv, montages des dossiers.",
+    type: "internship"
   },
   {
     id: 5,
     title: "Veille technologique",
     organization: "Personnelle",
     period: "Continu",
-    description: "Veille sur les technologies web et mobiles, les frameworks JavaScript et les bonnes pratiques de développement.",
+    description: "Veille sur les technologies de sécurité informatique, les réseaux informatiques et les algorithmes.",
     type: "veille"
   }
 ];
@@ -71,7 +71,7 @@ const About = () => {
           </span>
           <h2 className="section-heading">À propos de moi</h2>
           <p className="section-subheading">
-            Je m'appelle Bemba KEBE, j'ai 19 ans et je suis actuellement étudiant en BTS SIO option SLAM.
+            Je m'appelle Bemba KEBE, j'ai 18 ans et je suis actuellement étudiant en BTS SIO option SLAM à Gentilly.
           </p>
         </div>
 
@@ -110,27 +110,45 @@ const About = () => {
               <div className="icon-container bg-primary text-primary-foreground mr-3">
                 <Briefcase className="h-5 w-5" />
               </div>
-              <h3 className="text-2xl font-display font-bold">Expérience</h3>
+              <h3 className="text-2xl font-display font-bold">Centres d'intérêt</h3>
             </div>
 
             <div className="space-y-6">
-              {experienceItems.map((item, index) => (
-                <Card key={item.id} className="overflow-hidden border-0 shadow-md animate-fade-up" style={{ animationDelay: `${index * 100}ms` }}>
-                  <CardContent className="p-6">
-                    <div className="flex items-start">
-                      <div className="flex-1">
-                        <h4 className="text-lg font-semibold">{item.title}</h4>
-                        <p className="text-primary font-medium">{item.organization}</p>
-                        <div className="flex items-center mt-1 mb-3 text-sm text-muted-foreground">
-                          <Calendar className="h-4 w-4 mr-1" />
-                          <span>{item.period}</span>
-                        </div>
-                        <p className="text-muted-foreground">{item.description}</p>
-                      </div>
+              <Card className="overflow-hidden border-0 shadow-md animate-fade-up">
+                <CardContent className="p-6">
+                  <div className="flex items-start">
+                    <div className="flex-1">
+                      <h4 className="text-lg font-semibold">Voyage</h4>
+                      <p className="text-primary font-medium">Guinée (Conakry)</p>
+                      <p className="text-muted-foreground mt-3">Passionné par la découverte de nouvelles cultures et paysages.</p>
                     </div>
-                  </CardContent>
-                </Card>
-              ))}
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card className="overflow-hidden border-0 shadow-md animate-fade-up">
+                <CardContent className="p-6">
+                  <div className="flex items-start">
+                    <div className="flex-1">
+                      <h4 className="text-lg font-semibold">Cinéma</h4>
+                      <p className="text-primary font-medium">Films d'action, Aventure, Comédie</p>
+                      <p className="text-muted-foreground mt-3">Amateur de films dans divers genres.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card className="overflow-hidden border-0 shadow-md animate-fade-up">
+                <CardContent className="p-6">
+                  <div className="flex items-start">
+                    <div className="flex-1">
+                      <h4 className="text-lg font-semibold">Sport et Loisirs</h4>
+                      <p className="text-primary font-medium">Football, Lecture, Jeux laser</p>
+                      <p className="text-muted-foreground mt-3">Activités sportives et récréatives variées.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>

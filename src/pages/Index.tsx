@@ -6,7 +6,7 @@ import Skills from '@/components/Skills';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Mail, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Index = () => {
@@ -53,8 +53,8 @@ const Index = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent mix-blend-overlay"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                  alt="Hero illustration" 
+                  src="/lovable-uploads/7bb3e84e-012c-4146-be8c-11e02b022fab.png" 
+                  alt="Bemba KEBE" 
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -68,7 +68,7 @@ const Index = () => {
                 Bonjour, je suis <span className="text-primary">Bemba KEBE</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-lg">
-                Passionné par le développement d'applications et la programmation. Je suis actuellement en formation BTS SIO option SLAM.
+                Étudiant en BTS SIO et passionné par la sécurité informatique, les réseaux et le développement d'applications. Mon état d'esprit positif et enthousiaste me pousse à me dépasser et à poursuivre mes objectifs avec passion et détermination.
               </p>
               
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
@@ -87,7 +87,7 @@ const Index = () => {
               
               <div className="flex items-center gap-4 justify-center md:justify-start mt-8">
                 <a
-                  href="#"
+                  href="http://bemba942.github.io/projet/"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -96,20 +96,18 @@ const Index = () => {
                   <Github className="h-6 w-6" />
                 </a>
                 <a
-                  href="#"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="h-6 w-6" />
-                </a>
-                <a
-                  href="mailto:contact@example.com"
+                  href="mailto:bembakebe106@gmail.com"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                   aria-label="Email"
                 >
                   <Mail className="h-6 w-6" />
+                </a>
+                <a
+                  href="tel:0769961548"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  aria-label="Téléphone"
+                >
+                  <Phone className="h-6 w-6" />
                 </a>
               </div>
             </div>

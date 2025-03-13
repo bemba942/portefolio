@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Code, Database, Layout, Server, Smartphone, Sparkles, Heart, Users, Brain, Globe } from 'lucide-react';
+import { Code, Database, Layout, Server, Heart, Users, Brain, Shield } from 'lucide-react';
 
 interface SkillCategory {
   id: number;
@@ -15,66 +15,66 @@ interface SkillCategory {
 const skillCategories: SkillCategory[] = [
   {
     id: 1,
-    title: "Développement Web",
-    description: "Création de sites web et d'applications web",
-    icon: <Layout className="h-6 w-6" />,
-    skills: ["HTML5", "CSS3", "JavaScript", "PHP", "Bootstrap", "WordPress"],
+    title: "Sécurité Informatique",
+    description: "Protection des systèmes informatiques",
+    icon: <Shield className="h-6 w-6" />,
+    skills: ["Compétences en sécurité informatique", "Maintenance informatique", "MAJ antivirus"],
     type: 'hard'
   },
   {
     id: 2,
-    title: "Programmation",
-    description: "Langages de programmation et frameworks",
-    icon: <Code className="h-6 w-6" />,
-    skills: ["Java", "C#", "Python", ".NET", "React"],
+    title: "Réseaux",
+    description: "Gestion des réseaux informatiques",
+    icon: <Server className="h-6 w-6" />,
+    skills: ["Compétences en réseaux informatiques", "Configuration", "Maintenance"],
     type: 'hard'
   },
   {
     id: 3,
-    title: "Bases de données",
-    description: "Gestion et modélisation des données",
-    icon: <Database className="h-6 w-6" />,
-    skills: ["MySQL", "SQL Server", "MongoDB"],
+    title: "Programmation",
+    description: "Langages de programmation",
+    icon: <Code className="h-6 w-6" />,
+    skills: ["Notions d'algorithme (C++)", "Pack office"],
     type: 'hard'
   },
   {
     id: 4,
-    title: "Systèmes et Réseaux",
-    description: "Configuration et maintenance",
-    icon: <Server className="h-6 w-6" />,
-    skills: ["Windows Server", "Linux", "Active Directory", "DHCP", "DNS"],
+    title: "Support Technique",
+    description: "Résolution de problèmes",
+    icon: <Brain className="h-6 w-6" />,
+    skills: ["Personne ressource pour résoudre les problèmes informatiques", "Support utilisateur"],
     type: 'hard'
   },
   {
     id: 5,
-    title: "Travail d'équipe",
-    description: "Collaboration et communication",
-    icon: <Users className="h-6 w-6" />,
-    skills: ["Communication", "Collaboration", "Gestion de conflits", "Partage de connaissances"],
+    title: "Qualités Personnelles",
+    description: "Atouts personnels",
+    icon: <Heart className="h-6 w-6" />,
+    skills: ["Déterminé", "Responsable", "Dynamique", "Souriant"],
     type: 'soft'
   },
   {
     id: 6,
-    title: "Résolution de problèmes",
-    description: "Analyse et solutions",
-    icon: <Brain className="h-6 w-6" />,
-    skills: ["Analyse critique", "Créativité", "Persévérance", "Gestion du stress"],
+    title: "Travail d'équipe",
+    description: "Collaboration et communication",
+    icon: <Users className="h-6 w-6" />,
+    skills: ["Esprit d'équipe", "Communication", "Collaboration"],
     type: 'soft'
   },
   {
     id: 7,
-    title: "Adaptabilité",
-    description: "Apprentissage continu",
-    icon: <Globe className="h-6 w-6" />,
-    skills: ["Veille technologique", "Curiosité", "Autoformation", "Flexibilité"],
+    title: "Compétences Personnelles",
+    description: "Autres compétences",
+    icon: <Brain className="h-6 w-6" />,
+    skills: ["Adaptabilité", "Prise de décision", "Mathématique"],
     type: 'soft'
   },
   {
     id: 8,
-    title: "Leadership",
-    description: "Gestion et motivation",
-    icon: <Heart className="h-6 w-6" />,
-    skills: ["Initiative", "Organisation", "Motivation", "Responsabilité"],
+    title: "Compétences Linguistiques",
+    description: "Langues étrangères",
+    icon: <Layout className="h-6 w-6" />,
+    skills: ["Anglais", "Espagnol"],
     type: 'soft'
   }
 ];
