@@ -45,8 +45,6 @@ const Index = () => {
           background: 'linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%)'
         }}
       >
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80')] bg-fixed bg-cover opacity-[0.03]"></div>
-        
         <div className="container px-6 relative z-10">
           <div className="grid md:grid-cols-1 gap-12 items-center">
             <div className="text-center space-y-6 animate-fade-up">

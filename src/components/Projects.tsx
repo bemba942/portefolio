@@ -60,8 +60,8 @@ const projects: Project[] = [
     title: "Portfolio & CV",
     description: "Site web personnel présentant mon parcours, mes compétences et mes projets réalisés pendant ma formation.",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    technologies: ["HTML", "CSS"],
-    liveUrl: "#",
+    technologies: ["React", "TypeScript", "Tailwind CSS"],
+    liveUrl: "https://preview--cv-adaptor-optimizer.lovable.app",
     githubUrl: "http://bemba942.github.io/projet/",
   },
 ];
