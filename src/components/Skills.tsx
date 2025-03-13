@@ -34,7 +34,7 @@ const skillCategories: SkillCategory[] = [
     title: "Programmation",
     description: "Langages de programmation",
     icon: <Code className="h-6 w-6" />,
-    skills: ["Notions d'algorithme (C++)", "Pack office"],
+    skills: ["Client léger (HTML, CSS, PHP)", "Client lourd (C#, C++)", "Pack office"],
     type: 'hard'
   },
   {
