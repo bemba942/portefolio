@@ -34,11 +34,19 @@ const skillCategories: SkillCategory[] = [
     title: "Programmation",
     description: "Langages de programmation",
     icon: <Code className="h-6 w-6" />,
-    skills: ["Client léger (HTML, CSS, PHP)", "Client lourd (C#, C++)", "Pack office"],
+    skills: ["Client léger (HTML, CSS, PHP, JavaScript)", "Client lourd (C#, C++)", "Pack office"],
     type: 'hard'
   },
   {
     id: 4,
+    title: "Base de données",
+    description: "Gestion et manipulation des données",
+    icon: <Database className="h-6 w-6" />,
+    skills: ["SQL", "Conception de bases de données", "Requêtes et optimisation"],
+    type: 'hard'
+  },
+  {
+    id: 5,
     title: "Support Technique",
     description: "Résolution de problèmes",
     icon: <Brain className="h-6 w-6" />,
@@ -46,7 +54,7 @@ const skillCategories: SkillCategory[] = [
     type: 'hard'
   },
   {
-    id: 5,
+    id: 6,
     title: "Qualités Personnelles",
     description: "Atouts personnels",
     icon: <Heart className="h-6 w-6" />,
@@ -54,7 +62,7 @@ const skillCategories: SkillCategory[] = [
     type: 'soft'
   },
   {
-    id: 6,
+    id: 7,
     title: "Travail d'équipe",
     description: "Collaboration et communication",
     icon: <Users className="h-6 w-6" />,
@@ -62,7 +70,7 @@ const skillCategories: SkillCategory[] = [
     type: 'soft'
   },
   {
-    id: 7,
+    id: 8,
     title: "Compétences Personnelles",
     description: "Autres compétences",
     icon: <Brain className="h-6 w-6" />,
@@ -70,7 +78,7 @@ const skillCategories: SkillCategory[] = [
     type: 'soft'
   },
   {
-    id: 8,
+    id: 9,
     title: "Compétences Linguistiques",
     description: "Langues étrangères",
     icon: <Layout className="h-6 w-6" />,
