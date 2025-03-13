@@ -17,7 +17,7 @@ const timelineItems: TimelineItem[] = [
   {
     id: 1,
     title: "BTS SIO option SLAM",
-    organization: "Collège Rosa Parks",
+    organization: "Lycée Parc Vilgénis à Massy",
     period: "2020 - Présent",
     description: "Formation en Services Informatiques aux Organisations, spécialité Solutions Logicielles et Applications Métiers.",
     type: "education"
