@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -29,7 +30,7 @@ const contactInfo: ContactInfo[] = [
   {
     icon: <MapPin className="h-5 w-5" />,
     title: "Adresse",
-    details: "Massy, France"
+    details: "106 rue Gabriel Peri 94250 Gentilly"
   }
 ];
 
