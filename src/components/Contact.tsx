@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -18,19 +17,19 @@ const contactInfo: ContactInfo[] = [
   {
     icon: <Mail className="h-5 w-5" />,
     title: "Email",
-    details: "contact@exemple.com",
-    link: "mailto:contact@exemple.com"
+    details: "bembakebe106@gmail.com",
+    link: "mailto:bembakebe106@gmail.com"
   },
   {
     icon: <Phone className="h-5 w-5" />,
     title: "Téléphone",
-    details: "+33 6 12 34 56 78",
-    link: "tel:+33612345678"
+    details: "07 69 96 15 48",
+    link: "tel:0769961548"
   },
   {
     icon: <MapPin className="h-5 w-5" />,
     title: "Adresse",
-    details: "Paris, France"
+    details: "Massy, France"
   }
 ];
 
