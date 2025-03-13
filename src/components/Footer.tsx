@@ -33,10 +33,10 @@ const Footer = () => {
           
           <div className="text-center">
             <p className="text-sm text-muted-foreground">
-              &copy; {currentYear} Mon Portfolio. Tous droits réservés.
+              &copy; {currentYear} Bemba KEBE. Tous droits réservés.
             </p>
             <p className="mt-2 text-xs text-muted-foreground flex items-center justify-center">
-              Conçu avec <Heart className="h-3 w-3 mx-1 text-red-500" /> en France
+              Portfolio BTS SIO <Heart className="h-3 w-3 mx-1 text-red-500" /> option SLAM
             </p>
           </div>
         </div>

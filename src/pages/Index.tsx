@@ -62,13 +62,13 @@ const Index = () => {
             
             <div className="text-center md:text-left space-y-6 animate-fade-right">
               <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary animate-pulse">
-                Développeur Web Full Stack
+                Étudiant BTS SIO option SLAM
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
-                Bonjour, je suis <span className="text-primary">Prénom Nom</span>
+                Bonjour, je suis <span className="text-primary">Bemba KEBE</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-lg">
-                Passionné par la création d'expériences digitales élégantes, fonctionnelles et intuitives. Spécialisé en développement web et mobile.
+                Passionné par le développement d'applications et la programmation. Je suis actuellement en formation BTS SIO option SLAM.
               </p>
               
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">

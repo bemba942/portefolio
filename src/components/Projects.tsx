@@ -17,29 +17,27 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Application Web E-commerce",
-    description: "Une plateforme e-commerce complète avec panier d'achat, paiement sécurisé et gestion des commandes.",
+    title: "Application de Gestion de Stock",
+    description: "Développement d'une application de gestion de stock pour un magasin local, permettant de suivre les entrées et sorties de produits.",
     image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
-    liveUrl: "#",
+    technologies: ["PHP", "MySQL", "Bootstrap", "JavaScript"],
     githubUrl: "#",
   },
   {
     id: 2,
-    title: "Application Mobile de Fitness",
-    description: "Une application mobile pour suivre vos entraînements, nutrition et progrès dans votre parcours fitness.",
+    title: "Site Web Vitrine",
+    description: "Création d'un site web vitrine pour une association, avec un système de gestion de contenu pour faciliter les mises à jour.",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    technologies: ["React Native", "Firebase", "Redux", "Google Fit API"],
+    technologies: ["HTML", "CSS", "JavaScript", "WordPress"],
     liveUrl: "#",
     githubUrl: "#",
   },
   {
     id: 3,
-    title: "Tableau de Bord Analytique",
-    description: "Un tableau de bord interactif pour visualiser les données commerciales et les métriques importantes.",
+    title: "Application Mobile de Suivi",
+    description: "Développement d'une application mobile permettant aux utilisateurs de suivre leurs activités quotidiennes et leur progression.",
     image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    technologies: ["Vue.js", "D3.js", "Express", "PostgreSQL"],
-    liveUrl: "#",
+    technologies: ["React Native", "Firebase", "JavaScript"],
     githubUrl: "#",
   },
 ];
@@ -50,11 +48,11 @@ const Projects = () => {
       <div className="container px-6">
         <div className="text-center animate-fade-up">
           <span className="inline-block px-3 py-1 text-sm font-medium rounded-full bg-primary/10 text-primary mb-3">
-            Réalisations
+            Projets Scolaires
           </span>
           <h2 className="section-heading">Mes projets</h2>
           <p className="section-subheading">
-            Découvrez une sélection de mes réalisations récentes, illustrant mes compétences et mon expertise.
+            Découvrez une sélection de mes projets réalisés pendant ma formation BTS SIO option SLAM.
           </p>
         </div>
 
