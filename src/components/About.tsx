@@ -213,13 +213,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-16 text-center animate-fade-up">
-          <Button className="button-primary" asChild>
-            <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
-              Télécharger mon CV
-            </a>
-          </Button>
-        </div>
+        {/* CV download button removed as requested */}
       </div>
     </section>
   );
