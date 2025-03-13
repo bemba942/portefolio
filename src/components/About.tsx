@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Calendar, GraduationCap, Briefcase, Search } from 'lucide-react';
+import { Calendar, GraduationCap, Briefcase, Search, Headset } from 'lucide-react';
 
 interface TimelineItem {
   id: number;
@@ -48,10 +48,10 @@ const timelineItems: TimelineItem[] = [
   },
   {
     id: 5,
-    title: "Veille technologique",
+    title: "Veille technologique sur la VR",
     organization: "Personnelle",
     period: "Continu",
-    description: "Veille sur les technologies de sécurité informatique, les réseaux informatiques et les algorithmes.",
+    description: "Veille sur les technologies de réalité virtuelle, évolution des casques VR, applications et usages en développement.",
     type: "veille"
   }
 ];
@@ -71,7 +71,7 @@ const About = () => {
           </span>
           <h2 className="section-heading">À propos de moi</h2>
           <p className="section-subheading">
-            Je m'appelle Bemba KEBE, j'ai 18 ans et je suis actuellement étudiant en BTS SIO option SLAM à Gentilly.
+            Je m'appelle Bemba KEBE, j'ai 19 ans et je suis né en 2005. Je suis actuellement étudiant en BTS SIO option SLAM à Gentilly.
           </p>
         </div>
 
@@ -186,7 +186,7 @@ const About = () => {
           <div className="animate-fade-left">
             <div className="flex items-center mb-6">
               <div className="icon-container bg-primary text-primary-foreground mr-3">
-                <Search className="h-5 w-5" />
+                <Headset className="h-5 w-5" />
               </div>
               <h3 className="text-2xl font-display font-bold">Veille Technologique</h3>
             </div>
