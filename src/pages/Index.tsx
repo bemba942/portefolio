@@ -6,7 +6,7 @@ import Skills from '@/components/Skills';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
-import { ArrowDown, Download, Github, Mail, Phone } from 'lucide-react';
+import { ArrowDown, Github, Mail, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from "@/components/ui/use-toast";
 
@@ -33,35 +33,6 @@ const Index = () => {
 
     return () => observer.disconnect();
   }, []);
-
-  // Fonction pour télécharger le portfolio
-  const handleDownload = () => {
-    try {
-      // URL vers un fichier ZIP du portfolio (à remplacer par votre URL réelle)
-      const portfolioZipUrl = '/portfolio-bemba-kebe.zip';
-      
-      // Créer un élément a temporaire pour déclencher le téléchargement
-      const link = document.createElement('a');
-      link.href = portfolioZipUrl;
-      link.download = 'portfolio-bemba-kebe.zip';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      
-      // Afficher une notification de succès
-      toast({
-        title: "Téléchargement démarré",
-        description: "Votre portfolio est en cours de téléchargement",
-      });
-    } catch (error) {
-      // En cas d'erreur, afficher une notification
-      toast({
-        variant: "destructive",
-        title: "Erreur de téléchargement",
-        description: "Impossible de télécharger le portfolio pour le moment",
-      });
-    }
-  };
 
   return (
     <div className="min-h-screen bg-background antialiased">
@@ -99,10 +70,6 @@ const Index = () => {
                   <a href="#projects">
                     Voir mes projets
                   </a>
-                </Button>
-                <Button variant="secondary" onClick={handleDownload}>
-                  <Download className="mr-2 h-4 w-4" />
-                  Télécharger portfolio
                 </Button>
               </div>
               
