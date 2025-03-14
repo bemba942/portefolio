@@ -63,17 +63,6 @@ const Index = () => {
     }
   };
 
-  // Fonction pour la publication
-  const handlePublish = () => {
-    // Ouvrir une nouvelle fenêtre avec des instructions de publication
-    window.open('https://app.netlify.com/drop', '_blank');
-    
-    toast({
-      title: "Publication facile avec Netlify Drop",
-      description: "Glissez-déposez le dossier du portfolio téléchargé pour publier votre site",
-    });
-  };
-
   return (
     <div className="min-h-screen bg-background antialiased">
       <Header />
@@ -114,10 +103,6 @@ const Index = () => {
                 <Button variant="secondary" onClick={handleDownload}>
                   <Download className="mr-2 h-4 w-4" />
                   Télécharger portfolio
-                </Button>
-                <Button variant="destructive" onClick={handlePublish}>
-                  <Download className="mr-2 h-4 w-4" />
-                  Publier en ligne
                 </Button>
               </div>
               
