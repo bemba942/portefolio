@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -47,6 +48,14 @@ const timelineItems: TimelineItem[] = [
   },
   {
     id: 5,
+    title: "Stage développement web",
+    organization: "Digital Factory Paris, Antony",
+    period: "27/05/2024 - 05/07/2024",
+    description: "Stage en développement web avec apprentissage du JavaScript, création de pages web et participation à des projets d'entreprise.",
+    type: "internship"
+  },
+  {
+    id: 6,
     title: "Veille technologique sur la VR",
     organization: "Personnelle",
     period: "Continu",
@@ -183,6 +192,46 @@ const About = () => {
                           <span>{item.period}</span>
                         </div>
                         <p className="text-muted-foreground">{item.description}</p>
+                        
+                        {item.id === 5 && (
+                          <div className="mt-4 p-4 bg-secondary/20 rounded-lg">
+                            <h5 className="font-semibold mb-2">Rapport de stage</h5>
+                            <p className="text-sm text-muted-foreground mb-2">
+                              <strong>Formation :</strong> BTS SIO (Services Informatiques aux Organisations) option SLAM (Solutions Logicielles et Applications Métiers)
+                            </p>
+                            
+                            <h6 className="font-medium mt-3 mb-1">Introduction</h6>
+                            <p className="text-sm text-muted-foreground">
+                              Dans le cadre de ma formation en BTS SIO option SLAM, j'ai effectué un stage chez Digital Factory Paris, à Antony. 
+                              Ce stage, d'une durée de 6 semaines, avait pour but de me faire découvrir le monde professionnel du développement logiciel, 
+                              et surtout d'apprendre un nouveau langage de programmation : le JavaScript.
+                            </p>
+                            
+                            <h6 className="font-medium mt-3 mb-1">Présentation de l'entreprise</h6>
+                            <p className="text-sm text-muted-foreground">
+                              <strong>Nom :</strong> Digital Factory Paris<br />
+                              <strong>Localisation :</strong> Antony, France<br />
+                              <strong>Secteur :</strong> Développement de solutions numériques<br />
+                              <strong>Effectif :</strong> Environ 30 employés<br />
+                              <strong>Activités :</strong> Création de sites web, développement d'applications, consultation en stratégie digitale
+                            </p>
+                            
+                            <h6 className="font-medium mt-3 mb-1">Missions réalisées</h6>
+                            <ul className="text-sm text-muted-foreground list-disc pl-5 space-y-1">
+                              <li>Création d'une page web complète pour une entreprise fictive (HTML, CSS, JavaScript)</li>
+                              <li>Participation à l'amélioration d'une application interne en JavaScript</li>
+                              <li>Aide à la gestion des projets via Trello et GitHub</li>
+                            </ul>
+                            
+                            <h6 className="font-medium mt-3 mb-1">Compétences acquises</h6>
+                            <p className="text-sm text-muted-foreground">
+                              Ce stage m'a permis de renforcer mes compétences en développement web (HTML, CSS, JavaScript),
+                              d'améliorer mon organisation de travail, et de développer ma capacité à résoudre des problèmes techniques.
+                              Malgré les difficultés rencontrées, notamment avec l'apprentissage de JavaScript, j'ai progressé grâce au travail 
+                              personnel et à l'aide de mon tuteur.
+                            </p>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </CardContent>
