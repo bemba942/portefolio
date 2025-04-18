@@ -1,10 +1,12 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { ShieldCheck, Key, BookOpen } from 'lucide-react';
+import { ShieldCheck, Key, BookOpen, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
 const VeilleCard = () => {
+  const [isDetailOpen, setIsDetailOpen] = useState(false);
+
   return (
     <Card className="overflow-hidden border-0 shadow-md animate-fade-up">
       <CardContent className="p-6">
@@ -45,6 +47,36 @@ const VeilleCard = () => {
                 <p className="text-sm text-muted-foreground">
                   Bien que je n'aie pas encore mis en pratique l'A2F, je suis convaincu de son importance cruciale dans la sécurisation des systèmes d'information modernes. Je continue d'approfondir mes connaissances et me prépare à son implémentation future.
                 </p>
+              </div>
+
+              <div className="mt-4 flex justify-center">
+                <Dialog open={isDetailOpen} onOpenChange={setIsDetailOpen}>
+                  <DialogTrigger asChild>
+                    <Button variant="outline" className="gap-2">
+                      <Info className="h-4 w-4" />
+                      Plus de détails sur mon parcours A2F
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-lg">
+                    <DialogHeader>
+                      <DialogTitle>Mon Parcours d'Apprentissage sur l'A2F</DialogTitle>
+                    </DialogHeader>
+                    <div className="space-y-4 text-muted-foreground">
+                      <p>
+                        Mon intérêt pour l'Authentification à Deux Facteurs (A2F) est né de ma compréhension des défis croissants en cybersécurité. 
+                        Bien que je n'aie pas encore implementé cette technologie, je suis convaincu de son importance.
+                      </p>
+                      <p>
+                        J'ai étudié les différentes méthodes d'authentification : SMS, applications authenticator, clés physiques. 
+                        Chacune présente des avantages uniques en termes de sécurisation des systèmes d'information.
+                      </p>
+                      <p>
+                        Mon objectif est de transformer cette compréhension théorique en compétence pratique, 
+                        en intégrant l'A2F dans mes futurs projets web avec Laravel et C#.
+                      </p>
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </div>
             </div>
           </div>
