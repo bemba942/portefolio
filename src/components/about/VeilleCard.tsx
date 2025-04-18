@@ -3,7 +3,6 @@ import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { ShieldCheck, Key, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useNavigate } from 'react-router-dom';
 
 const VeilleCard = () => {
   return (
@@ -18,33 +17,33 @@ const VeilleCard = () => {
             
             <div className="space-y-4">
               <p className="text-muted-foreground">
-                Ma veille technologique sur l'A2F m'a permis d'approfondir mes connaissances en sécurité informatique et de comprendre les enjeux de la protection des données.
+                Ma veille technologique sur l'A2F m'a permis de comprendre les principes et l'importance de la sécurité informatique, bien que je n'aie pas encore eu l'occasion de l'implémenter concrètement dans mes projets personnels.
               </p>
               
               <div className="bg-primary/5 p-4 rounded-lg space-y-2">
                 <h5 className="font-semibold flex items-center gap-2">
                   <Key className="h-4 w-4" />
-                  Ce que j'ai appris
+                  Mes Connaissances Actuelles
                 </h5>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                  <li>L'importance cruciale d'une double vérification pour protéger les comptes sensibles</li>
-                  <li>Les différentes méthodes d'authentification (SMS, applications, clés physiques)</li>
-                  <li>Les avantages et inconvénients de chaque méthode</li>
-                  <li>Les bonnes pratiques de mise en œuvre dans les projets</li>
+                  <li>Compréhension théorique des mécanismes d'authentification à deux facteurs</li>
+                  <li>Identification des différentes méthodes : SMS, applications, clés physiques</li>
+                  <li>Conscience des avantages en termes de sécurité des systèmes d'information</li>
+                  <li>Connaissance des principes de base de l'implémentation</li>
                 </ul>
               </div>
               
               <div className="bg-secondary/20 p-4 rounded-lg">
-                <h5 className="font-semibold mb-2">Mes Applications Pratiques</h5>
+                <h5 className="font-semibold mb-2">Mes Perspectives</h5>
                 <p className="text-sm text-muted-foreground">
-                  Je prévois d'intégrer l'A2F dans mes projets de développement web avec Laravel et C#. J'ai notamment étudié les bibliothèques de sécurité disponibles et les meilleures pratiques d'implémentation pour offrir une expérience utilisateur optimale.
+                  Mon objectif est d'intégrer l'A2F dans mes futurs projets de développement web avec Laravel et C#. Je souhaite acquérir une expérience pratique et renforcer la sécurité de mes applications.
                 </p>
               </div>
 
               <div className="bg-primary/5 p-4 rounded-lg">
-                <h5 className="font-semibold mb-2">Ma Conclusion</h5>
+                <h5 className="font-semibold mb-2">Ma Motivation</h5>
                 <p className="text-sm text-muted-foreground">
-                  Cette veille m'a convaincu que l'A2F est indispensable pour tout système d'information moderne. Je continue à suivre les évolutions dans ce domaine pour rester à jour et offrir les meilleures solutions de sécurité dans mes projets.
+                  Bien que je n'aie pas encore mis en pratique l'A2F, je suis convaincu de son importance cruciale dans la sécurisation des systèmes d'information modernes. Je continue d'approfondir mes connaissances et me prépare à son implémentation future.
                 </p>
               </div>
             </div>
