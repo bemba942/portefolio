@@ -1,7 +1,8 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { ShieldCheck, Key } from 'lucide-react';
+import { ShieldCheck, Key, ExternalLink } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const VeilleCard = () => {
   return (
@@ -38,6 +39,19 @@ const VeilleCard = () => {
                   Intégration prévue dans mes projets de développement (Laravel, C#) pour renforcer la sécurité des utilisateurs.
                 </p>
               </div>
+
+              <div className="flex justify-center mt-4">
+                <Button className="button-primary" asChild>
+                  <a 
+                    href="https://www.ssi.gouv.fr/entreprise/bonnes-pratiques/recommandations-mots-de-passe-et-authentification/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    En savoir plus sur l'A2F
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -47,3 +61,4 @@ const VeilleCard = () => {
 };
 
 export default VeilleCard;
+
