@@ -1,8 +1,9 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { ShieldCheck, Key, ExternalLink } from 'lucide-react';
+import { ShieldCheck, Key, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 
 const VeilleCard = () => {
   return (
@@ -17,40 +18,34 @@ const VeilleCard = () => {
             
             <div className="space-y-4">
               <p className="text-muted-foreground">
-                J'ai choisi l'authentification à deux facteurs comme sujet de veille technologique, une mesure de sécurité devenue essentielle dans notre environnement numérique.
+                Ma veille technologique sur l'A2F m'a permis d'approfondir mes connaissances en sécurité informatique et de comprendre les enjeux de la protection des données.
               </p>
               
               <div className="bg-primary/5 p-4 rounded-lg space-y-2">
                 <h5 className="font-semibold flex items-center gap-2">
                   <Key className="h-4 w-4" />
-                  Points Clés
+                  Ce que j'ai appris
                 </h5>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                  <li>Sécurité renforcée : Un deuxième élément de vérification au-delà du mot de passe</li>
-                  <li>Méthodes variées : Code SMS, applications d'authentification, clés physiques</li>
-                  <li>Protection contre les piratages même si le mot de passe est compromis</li>
-                  <li>Adoption croissante par les principales plateformes en ligne</li>
+                  <li>L'importance cruciale d'une double vérification pour protéger les comptes sensibles</li>
+                  <li>Les différentes méthodes d'authentification (SMS, applications, clés physiques)</li>
+                  <li>Les avantages et inconvénients de chaque méthode</li>
+                  <li>Les bonnes pratiques de mise en œuvre dans les projets</li>
                 </ul>
               </div>
               
               <div className="bg-secondary/20 p-4 rounded-lg">
-                <h5 className="font-semibold mb-2">Applications Pratiques</h5>
+                <h5 className="font-semibold mb-2">Mes Applications Pratiques</h5>
                 <p className="text-sm text-muted-foreground">
-                  Intégration prévue dans mes projets de développement (Laravel, C#) pour renforcer la sécurité des utilisateurs.
+                  Je prévois d'intégrer l'A2F dans mes projets de développement web avec Laravel et C#. J'ai notamment étudié les bibliothèques de sécurité disponibles et les meilleures pratiques d'implémentation pour offrir une expérience utilisateur optimale.
                 </p>
               </div>
 
-              <div className="flex justify-center mt-4">
-                <Button className="button-primary" asChild>
-                  <a 
-                    href="https://www.ssi.gouv.fr/entreprise/bonnes-pratiques/recommandations-mots-de-passe-et-authentification/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    En savoir plus sur l'A2F
-                  </a>
-                </Button>
+              <div className="bg-primary/5 p-4 rounded-lg">
+                <h5 className="font-semibold mb-2">Ma Conclusion</h5>
+                <p className="text-sm text-muted-foreground">
+                  Cette veille m'a convaincu que l'A2F est indispensable pour tout système d'information moderne. Je continue à suivre les évolutions dans ce domaine pour rester à jour et offrir les meilleures solutions de sécurité dans mes projets.
+                </p>
               </div>
             </div>
           </div>
@@ -61,4 +56,3 @@ const VeilleCard = () => {
 };
 
 export default VeilleCard;
-
