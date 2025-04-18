@@ -11,7 +11,7 @@ const VeilleCard = () => {
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-3">
               <ShieldCheck className="h-6 w-6 text-primary" />
-              <h4 className="text-lg font-semibold">L'Authentification à Deux Facteurs (2FA)</h4>
+              <h4 className="text-lg font-semibold">L'Authentification à Deux Facteurs (A2F)</h4>
             </div>
             
             <div className="space-y-4">
