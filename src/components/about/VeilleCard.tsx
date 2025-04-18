@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { ShieldCheck, Key } from 'lucide-react';
 
 const VeilleCard = () => {
@@ -26,10 +25,10 @@ const VeilleCard = () => {
                   Points Clés
                 </h5>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                  <li>Protection renforcée : Ajout d'une deuxième couche de sécurité en plus du mot de passe</li>
-                  <li>Méthodes variées : SMS, applications d'authentification, clés physiques</li>
-                  <li>Adoption croissante : Utilisé par la majorité des plateformes importantes</li>
-                  <li>Expérience personnelle : Importance réalisée suite à un piratage de compte</li>
+                  <li>Sécurité renforcée : Un deuxième élément de vérification au-delà du mot de passe</li>
+                  <li>Méthodes variées : Code SMS, applications d'authentification, clés physiques</li>
+                  <li>Protection contre les piratages même si le mot de passe est compromis</li>
+                  <li>Adoption croissante par les principales plateformes en ligne</li>
                 </ul>
               </div>
               
@@ -39,13 +38,6 @@ const VeilleCard = () => {
                   Intégration prévue dans mes projets de développement (Laravel, C#) pour renforcer la sécurité des utilisateurs.
                 </p>
               </div>
-
-              <Button className="w-full" variant="outline">
-                <a href="#about" className="flex items-center justify-center gap-2">
-                  <ShieldCheck className="h-4 w-4" />
-                  En savoir plus sur la 2FA
-                </a>
-              </Button>
             </div>
           </div>
         </div>
