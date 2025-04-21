@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { ShieldCheck, Key, Info } from 'lucide-react';
@@ -60,7 +59,7 @@ const VeilleCard = () => {
                   </DialogTrigger>
                   <DialogContent className="max-w-lg">
                     <DialogHeader>
-                      <DialogTitle>Mon Parcours d'Apprentissage sur l'A2F</DialogTitle>
+                      <DialogTitle>Ma veille sur l'A2F</DialogTitle>
                     </DialogHeader>
                     <div className="space-y-4 text-muted-foreground">
                       <p>
@@ -88,4 +87,3 @@ const VeilleCard = () => {
 };
 
 export default VeilleCard;
-
