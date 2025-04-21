@@ -1,19 +1,12 @@
 
 import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { ShieldCheck, Key, BookOpen, Info, Image as ImageIcon } from 'lucide-react';
+import { ShieldCheck, Key, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
 const VeilleCard = () => {
   const [isDetailOpen, setIsDetailOpen] = useState(false);
-  const [isImagesOpen, setIsImagesOpen] = useState(false);
-
-  // URLs des images uploadées
-  const images = [
-    "/public/lovable-uploads/7bb3e84e-012c-4146-be8c-11e02b022fab.png",
-    "/public/lovable-uploads/7bb3e84e-012c-4146-be8c-11e02b022fab.png"
-  ];
 
   return (
     <Card className="overflow-hidden border-0 shadow-md animate-fade-up">
@@ -82,33 +75,6 @@ const VeilleCard = () => {
                         Mon objectif est de transformer cette compréhension théorique en compétence pratique, 
                         en intégrant l'A2F dans mes futurs projets web avec Laravel et C#.
                       </p>
-                    </div>
-                  </DialogContent>
-                </Dialog>
-
-                {/* BOUTON POUR AFFICHER LES IMAGES */}
-                <Dialog open={isImagesOpen} onOpenChange={setIsImagesOpen}>
-                  <DialogTrigger asChild>
-                    <Button variant="outline" className="gap-2" type="button">
-                      <ImageIcon className="h-4 w-4" />
-                      Voir les images
-                    </Button>
-                  </DialogTrigger>
-                  <DialogContent className="max-w-xl">
-                    <DialogHeader>
-                      <DialogTitle>Photos associées à ma veille</DialogTitle>
-                    </DialogHeader>
-                    <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-                      <img
-                        src="/public/lovable-uploads/7bb3e84e-012c-4146-be8c-11e02b022fab.png"
-                        alt="Image A2F 1"
-                        className="max-w-xs max-h-64 rounded shadow"
-                      />
-                      <img
-                        src="/public/lovable-uploads/7bb3e84e-012c-4146-be8c-11e02b022fab.png"
-                        alt="Image A2F 2"
-                        className="max-w-xs max-h-64 rounded shadow"
-                      />
                     </div>
                   </DialogContent>
                 </Dialog>
