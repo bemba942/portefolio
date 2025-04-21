@@ -54,7 +54,7 @@ const VeilleCard = () => {
                   <DialogTrigger asChild>
                     <Button variant="outline" className="gap-2">
                       <Info className="h-4 w-4" />
-                      Plus de détails sur mon parcours A2F
+                      Plus de detail sur ma veille
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="max-w-lg">
