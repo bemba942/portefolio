@@ -71,11 +71,11 @@ const projects: Project[] = [
     id: 5,
     title: "Gestion de site de vacances",
     description: "Réalisation d'une application web en PHP qui gère un site de vacances. Développée en Programmation Orientée Objet avec EasyPHP et gestion de la base de données MySQL.",
-    image: "https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    image: "/lovable-uploads/68516e7a-f071-408d-b2e5-72b5d86156c2.png",
     technologies: ["PHP", "HTML/CSS", "MySQL"],
     githubUrl: "http://bemba942.github.io/projet/",
     screenshot: {
-      url: "https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      url: "/lovable-uploads/68516e7a-f071-408d-b2e5-72b5d86156c2.png",
       description: "Interface de gestion des animations du centre de vacances"
     }
   }
