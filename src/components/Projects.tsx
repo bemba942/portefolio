@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -24,12 +23,12 @@ const projects: Project[] = [
     id: 1,
     title: "Gestion d'un zoo",
     description: "Application web permettant de gérer un zoo avec affichage de la liste des animaux, modifications de leurs informations, recherche et suppression d'un animal.",
-    image: "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    image: "/lovable-uploads/0b161f11-61e3-4eef-ada0-83062db2140d.png",
     technologies: ["PHP", "MySQL", "HTML/CSS"],
     githubUrl: "http://bemba942.github.io/projet/",
     screenshot: {
-      url: "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "Interface de gestion des animaux"
+      url: "/lovable-uploads/04b64bd0-552b-4355-b4aa-cdc76baee76c.png",
+      description: "Interface de gestion des animaux et tableau de bord"
     }
   },
   {
