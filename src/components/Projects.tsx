@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { ExternalLink, Github, Image } from 'lucide-react';
+import { Image, Github } from 'lucide-react';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
 interface Project {
@@ -52,7 +52,7 @@ const projects: Project[] = [
     technologies: ["C#", "MySQL", "XAML"],
     githubUrl: "http://bemba942.github.io/projet/",
     screenshot: {
-      url: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      url: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80", 
       description: "Interface de l'application avec menu principal"
     }
   },
@@ -91,7 +91,7 @@ const projects: Project[] = [
       url: "https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
       description: "Interface de gestion des animations du centre de vacances"
     }
-  },
+  }
 ];
 
 const Projects = () => {
@@ -129,7 +129,7 @@ const Projects = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p>{project.description}</p>
+                <p className="text-muted-foreground">{project.description}</p>
               </CardContent>
               <CardFooter className="flex justify-between">
                 {project.githubUrl && (
@@ -176,4 +176,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
