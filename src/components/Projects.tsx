@@ -1,7 +1,9 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, Image } from 'lucide-react';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
 interface Project {
   id: number;
@@ -9,59 +11,86 @@ interface Project {
   description: string;
   image: string;
   technologies: string[];
-  liveUrl?: string;
   githubUrl?: string;
+  details?: string;
+  screenshot?: {
+    url: string;
+    description: string;
+  };
 }
 
 const projects: Project[] = [
   {
     id: 1,
-    title: "Gestion de ZOO",
-    description: "Application client léger pour la gestion des animaux, des enclos et du personnel d'un zoo permettant d'optimiser les opérations quotidiennes.",
-    image: "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    technologies: ["PHP", "HTML", "CSS"],
+    title: "Jeu de voiture en interface 2D",
+    description: "Création d'un jeu en Python où le principe est d'esquiver des obstacles afin d'augmenter son score. Le jeu comprend une interface graphique avec une voiture contrôlable et des obstacles aléatoires.",
+    image: "https://images.unsplash.com/photo-1511385348-a52b4a160dc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    technologies: ["Python", "Tkinter"],
     githubUrl: "http://bemba942.github.io/projet/",
+    screenshot: {
+      url: "https://images.unsplash.com/photo-1511385348-a52b4a160dc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      description: "Interface du jeu avec voiture et obstacles"
+    }
   },
   {
     id: 2,
-    title: "Gestion d'Activités",
-    description: "Système client léger pour la gestion des activités permettant de planifier, suivre et gérer efficacement différentes activités et événements.",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    technologies: ["PHP", "HTML", "CSS"],
+    title: "Gestion d'un zoo",
+    description: "Application web permettant de gérer un zoo avec affichage de la liste des animaux, modifications de leurs informations, recherche et suppression d'un animal.",
+    image: "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    technologies: ["PHP", "MySQL", "HTML/CSS"],
     githubUrl: "http://bemba942.github.io/projet/",
+    screenshot: {
+      url: "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      description: "Interface de gestion des animaux"
+    }
   },
   {
     id: 3,
-    title: "Réservation de Salles",
-    description: "Application client lourd en C# permettant de réserver des salles de réunion ou d'événements avec gestion des disponibilités.",
-    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    technologies: ["C#", "WPF", "SQL Server"],
+    title: "Gestion de DVD",
+    description: "Application de gestion de collection de DVD permettant de cataloguer, rechercher et suivre les prêts de DVDs. Inclut des fonctionnalités de tri, filtrage et statistiques développées avec XAML.",
+    image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    technologies: ["C#", "MySQL", "XAML"],
     githubUrl: "http://bemba942.github.io/projet/",
+    screenshot: {
+      url: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      description: "Interface de l'application avec menu principal"
+    }
   },
   {
     id: 4,
-    title: "Gestion de DVD",
-    description: "Système de gestion de collection de DVD permettant le suivi des prêts, retours et l'inventaire des DVD.",
-    image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    technologies: ["C#", "SQL", "Entity Framework"],
+    title: "Actualité en ligne (News API)",
+    description: "Application WPF en C# permettant aux utilisateurs connectés de consulter les actualités en ligne. Intègre un système de filtrage par catégorie, recherche par mots-clés et gestion des favoris avec sauvegarde dans une base de données MySQL.",
+    image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    technologies: ["C#", "NewsAPI", "MySQL", "XAML"],
     githubUrl: "http://bemba942.github.io/projet/",
+    screenshot: {
+      url: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      description: "Interface de la recherche d'actualités"
+    }
   },
   {
     id: 5,
-    title: "API RESTful",
-    description: "Développement d'une API RESTful en C# permettant l'accès aux données et services d'une application.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    technologies: ["C#", "ASP.NET Core", "Web API", "Swagger"],
+    title: "Gestion de chaîne de salles de sport",
+    description: "Application client lourd développée en C# pour gérer une chaîne de salles de sport avec gestion de la base de données MySQL.",
+    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    technologies: ["C#", "MySQL", "XAML"],
     githubUrl: "http://bemba942.github.io/projet/",
+    screenshot: {
+      url: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      description: "Interface de gestion des salles"
+    }
   },
   {
     id: 6,
-    title: "Portfolio & CV",
-    description: "Site web personnel présentant mon parcours, mes compétences et mes projets réalisés pendant ma formation.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    technologies: ["React", "TypeScript", "Tailwind CSS"],
-    liveUrl: "https://preview--cv-adaptor-optimizer.lovable.app",
+    title: "Gestion de site de vacances",
+    description: "Réalisation d'une application web en PHP qui gère un site de vacances. Développée en Programmation Orientée Objet avec EasyPHP et gestion de la base de données MySQL.",
+    image: "https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    technologies: ["PHP", "HTML/CSS", "MySQL"],
     githubUrl: "http://bemba942.github.io/projet/",
+    screenshot: {
+      url: "https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      description: "Interface de gestion des animations du centre de vacances"
+    }
   },
 ];
 
@@ -111,6 +140,32 @@ const Projects = () => {
                     </a>
                   </Button>
                 )}
+                
+                {project.screenshot && (
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button variant="outline" size="sm">
+                        <Image className="mr-2 h-4 w-4" />
+                        Capture d'écran
+                      </Button>
+                    </DialogTrigger>
+                    <DialogContent className="sm:max-w-md">
+                      <DialogHeader>
+                        <DialogTitle>{project.title}</DialogTitle>
+                        <DialogDescription>
+                          {project.screenshot.description}
+                        </DialogDescription>
+                      </DialogHeader>
+                      <div className="flex items-center justify-center p-4">
+                        <img
+                          src={project.screenshot.url}
+                          alt={project.screenshot.description}
+                          className="rounded-md max-h-[70vh] w-auto"
+                        />
+                      </div>
+                    </DialogContent>
+                  </Dialog>
+                )}
               </CardFooter>
             </Card>
           ))}
@@ -121,3 +176,4 @@ const Projects = () => {
 };
 
 export default Projects;
+

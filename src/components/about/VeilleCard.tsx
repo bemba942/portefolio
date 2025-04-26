@@ -20,7 +20,7 @@ const VeilleCard = () => {
             
             <div className="space-y-4">
               <p className="text-muted-foreground">
-                J'ai appris le principe de l'Authentification à Deux Facteurs (A2F). Même si je ne l'ai pas encore employée dans mes propres projets, je comprends qu'elle ajoute une étape pour rendre les connexions plus sûres.
+                J'ai appris ce qu'est l'Authentification à Deux Facteurs (A2F). Je ne l'ai pas encore utilisée dans mes projets, mais je comprends que ça rend les connexions plus sûres.
               </p>
               
               <div className="bg-primary/5 p-4 rounded-lg space-y-2">
@@ -29,24 +29,24 @@ const VeilleCard = () => {
                   Ce que je sais aujourd'hui
                 </h5>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                  <li>L'A2F demande deux preuves pour se connecter, comme un mot de passe et un code reçu par SMS</li>
-                  <li>Il y a plusieurs méthodes : SMS, applications spéciales, clés USB</li>
-                  <li>Elle sert à mieux protéger les comptes</li>
-                  <li>Je sais les bases pour l'utiliser mais je n'ai jamais essayé pour le moment</li>
+                  <li>L'A2F demande deux choses pour se connecter, comme un mot de passe et un code par SMS</li>
+                  <li>On peut recevoir le code par SMS, par application ou avec une clé USB spéciale</li>
+                  <li>Ça protège mieux nos comptes contre les pirates</li>
+                  <li>Je connais les bases mais je n'ai pas encore essayé</li>
                 </ul>
               </div>
               
               <div className="bg-secondary/20 p-4 rounded-lg">
                 <h5 className="font-semibold mb-2">Mes projets</h5>
                 <p className="text-sm text-muted-foreground">
-                  Plus tard, je veux ajouter l'A2F dans mes futurs sites web, par exemple en utilisant Laravel ou C#. Cela me permettra de rendre mes applications plus protégées.
+                  Plus tard, je veux ajouter l'A2F dans mes sites web, avec Laravel ou C#. Ça les rendra plus sécurisés.
                 </p>
               </div>
 
               <div className="bg-primary/5 p-4 rounded-lg">
                 <h5 className="font-semibold mb-2">Pourquoi c'est important ?</h5>
                 <p className="text-sm text-muted-foreground">
-                  Même si je n'ai pas encore utilisé l'A2F moi-même, je sais qu'elle est très importante pour éviter que des personnes non autorisées accèdent aux comptes. Je continue d'apprendre pour l'utiliser bientôt.
+                  Même si je n'ai pas encore utilisé l'A2F, je sais que c'est très important pour empêcher les personnes non autorisées d'accéder aux comptes. Je continue d'apprendre pour l'utiliser bientôt.
                 </p>
               </div>
 
@@ -64,10 +64,10 @@ const VeilleCard = () => {
                     </DialogHeader>
                     <div className="space-y-4 text-muted-foreground">
                       <p>
-                        L'A2F veut dire qu'il faut deux preuves pour se connecter : par exemple, un mot de passe et un code qu'on reçoit par SMS ou par une application.
+                        L'A2F veut dire qu'il faut deux preuves pour se connecter : par exemple, un mot de passe et un code reçu par SMS ou par une application.
                       </p>
                       <p>
-                        J'ai compris que cela sert à rendre l'accès à nos comptes plus difficile pour les pirates. Il y a plusieurs moyens de faire l'A2F, comme les SMS ou des clés USB spéciales.
+                        Ça aide à rendre nos comptes plus difficiles à pirater. Il y a plusieurs façons de faire l'A2F, comme les SMS ou des clés USB spéciales.
                       </p>
                       <p>
                         Je n'ai pas encore eu l'occasion de l'ajouter dans mes projets, mais j'aimerais beaucoup le faire pour mieux protéger mes futures applications.
@@ -85,4 +85,3 @@ const VeilleCard = () => {
 };
 
 export default VeilleCard;
-
