@@ -46,13 +46,17 @@ const projects: Project[] = [
   {
     id: 3,
     title: "Actualité en ligne (News API)",
-    description: "Application WPF en C# permettant aux utilisateurs connectés de consulter les actualités en ligne. Intègre un système de filtrage par catégorie, recherche par mots-clés et gestion des favoris avec sauvegarde dans une base de données MySQL.",
-    image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    technologies: ["C#", "NewsAPI", "MySQL", "XAML"],
+    description: `Application WPF en C# intégrant l'API NewsAPI pour fournir des actualités en temps réel. Fonctionnalités clés :
+    - Authentification des utilisateurs
+    - Filtrage par catégorie et recherche par mots-clés
+    - Intégration API REST avec NewsAPI
+    - Système de favoris avec persistance MySQL`,
+    image: "/lovable-uploads/c73df2c8-ae75-48e4-a5e5-af6410a7089f.png",
+    technologies: ["C#", "NewsAPI", "MySQL", "XAML", "REST API"],
     githubUrl: "http://bemba942.github.io/projet/",
     screenshot: {
-      url: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "Interface de la recherche d'actualités"
+      url: "/lovable-uploads/c73df2c8-ae75-48e4-a5e5-af6410a7089f.png",
+      description: "Interface de recherche d'actualités avec intégration API"
     }
   },
   {
