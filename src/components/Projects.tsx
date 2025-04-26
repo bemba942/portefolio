@@ -66,13 +66,14 @@ const projects: Project[] = [
     id: 4,
     title: "Gestion des salles",
     description: "Application client lourd développée en C# pour gérer une chaîne de salles avec gestion de la base de données MySQL.",
-    image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04", // Image de salle de classe
+    image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
     technologies: ["C#", "MySQL", "XAML"],
     githubUrl: "http://bemba942.github.io/projet/",
     screenshot: {
       url: "https://images.unsplash.com/photo-1721322800607-8c38375eef04", 
       description: "Interface de gestion des salles"
-    }
+    },
+    pdfUrl: "/documentation-salles.pdf"
   },
   {
     id: 5,
@@ -84,7 +85,8 @@ const projects: Project[] = [
     screenshot: {
       url: "/lovable-uploads/68516e7a-f071-408d-b2e5-72b5d86156c2.png",
       description: "Interface de gestion des animations du centre de vacances"
-    }
+    },
+    pdfUrl: "/documentation-vva.pdf"
   }
 ];
 
