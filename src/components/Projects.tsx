@@ -30,8 +30,7 @@ const projects: Project[] = [
     screenshot: {
       url: "/lovable-uploads/04b64bd0-552b-4355-b4aa-cdc76baee76c.png",
       description: "Interface de gestion des animaux et tableau de bord"
-    },
-    pdfUrl: "https://docs.google.com/document/d/1laqpEHSjEw09eMECfBF-Df6S-ONcclzI/edit?usp=sharing&ouid=102824881939321223696&rtpof=true&sd=true"
+    }
   },
   {
     id: 2,
@@ -59,8 +58,7 @@ const projects: Project[] = [
     screenshot: {
       url: "/lovable-uploads/c73df2c8-ae75-48e4-a5e5-af6410a7089f.png",
       description: "Interface de recherche d'actualités avec intégration API"
-    },
-    pdfUrl: "/documentation-news.pdf"
+    }
   },
   {
     id: 4,
