@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Image, Github } from 'lucide-react';
+import { Image, Github, FilePdf } from 'lucide-react';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
 interface Project {
@@ -16,6 +16,7 @@ interface Project {
     url: string;
     description: string;
   };
+  pdfUrl?: string;
 }
 
 const projects: Project[] = [
@@ -29,7 +30,8 @@ const projects: Project[] = [
     screenshot: {
       url: "/lovable-uploads/04b64bd0-552b-4355-b4aa-cdc76baee76c.png",
       description: "Interface de gestion des animaux et tableau de bord"
-    }
+    },
+    pdfUrl: "/documentation-zoo.pdf"
   },
   {
     id: 2,
@@ -57,7 +59,8 @@ const projects: Project[] = [
     screenshot: {
       url: "/lovable-uploads/c73df2c8-ae75-48e4-a5e5-af6410a7089f.png",
       description: "Interface de recherche d'actualités avec intégration API"
-    }
+    },
+    pdfUrl: "/documentation-news.pdf"
   },
   {
     id: 4,
@@ -122,12 +125,21 @@ const Projects = () => {
               <CardContent>
                 <p className="text-muted-foreground">{project.description}</p>
               </CardContent>
-              <CardFooter className="flex justify-between">
+              <CardFooter className="flex justify-between gap-2">
                 {project.githubUrl && (
                   <Button variant="outline" size="sm" asChild>
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" />
                       Code
+                    </a>
+                  </Button>
+                )}
+                
+                {project.pdfUrl && (
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={project.pdfUrl} target="_blank" rel="noopener noreferrer">
+                      <FilePdf className="mr-2 h-4 w-4" />
+                      Documentation
                     </a>
                   </Button>
                 )}
