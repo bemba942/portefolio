@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Image, Github, FilePdf } from 'lucide-react';
+import { Image, Github, FileText } from 'lucide-react';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
 interface Project {
@@ -138,7 +138,7 @@ const Projects = () => {
                 {project.pdfUrl && (
                   <Button variant="outline" size="sm" asChild>
                     <a href={project.pdfUrl} target="_blank" rel="noopener noreferrer">
-                      <FilePdf className="mr-2 h-4 w-4" />
+                      <FileText className="mr-2 h-4 w-4" />
                       Documentation
                     </a>
                   </Button>
