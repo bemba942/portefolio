@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -59,12 +58,12 @@ const projects: Project[] = [
   {
     id: 4,
     title: "Gestion des salles",
-    description: "Application client lourd développée en C# pour gérer une chaîne de salles de sport avec gestion de la base de données MySQL.",
-    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    description: "Application client lourd développée en C# pour gérer une chaîne de salles avec gestion de la base de données MySQL.",
+    image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334",
     technologies: ["C#", "MySQL", "XAML"],
     githubUrl: "http://bemba942.github.io/projet/",
     screenshot: {
-      url: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      url: "https://images.unsplash.com/photo-1483058712412-4245e9b90334", 
       description: "Interface de gestion des salles"
     }
   },
