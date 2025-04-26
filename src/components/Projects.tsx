@@ -22,18 +22,6 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Jeu de voiture en interface 2D",
-    description: "Création d'un jeu en Python où le principe est d'esquiver des obstacles afin d'augmenter son score. Le jeu comprend une interface graphique avec une voiture contrôlable et des obstacles aléatoires.",
-    image: "https://images.unsplash.com/photo-1511385348-a52b4a160dc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    technologies: ["Python", "Tkinter"],
-    githubUrl: "http://bemba942.github.io/projet/",
-    screenshot: {
-      url: "https://images.unsplash.com/photo-1511385348-a52b4a160dc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "Interface du jeu avec voiture et obstacles"
-    }
-  },
-  {
-    id: 2,
     title: "Gestion d'un zoo",
     description: "Application web permettant de gérer un zoo avec affichage de la liste des animaux, modifications de leurs informations, recherche et suppression d'un animal.",
     image: "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
@@ -45,7 +33,7 @@ const projects: Project[] = [
     }
   },
   {
-    id: 3,
+    id: 2,
     title: "Gestion de DVD",
     description: "Application de gestion de collection de DVD permettant de cataloguer, rechercher et suivre les prêts de DVDs. Inclut des fonctionnalités de tri, filtrage et statistiques développées avec XAML.",
     image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
@@ -57,7 +45,7 @@ const projects: Project[] = [
     }
   },
   {
-    id: 4,
+    id: 3,
     title: "Actualité en ligne (News API)",
     description: "Application WPF en C# permettant aux utilisateurs connectés de consulter les actualités en ligne. Intègre un système de filtrage par catégorie, recherche par mots-clés et gestion des favoris avec sauvegarde dans une base de données MySQL.",
     image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
@@ -69,8 +57,8 @@ const projects: Project[] = [
     }
   },
   {
-    id: 5,
-    title: "Gestion de chaîne de salles de sport",
+    id: 4,
+    title: "Gestion des salles",
     description: "Application client lourd développée en C# pour gérer une chaîne de salles de sport avec gestion de la base de données MySQL.",
     image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     technologies: ["C#", "MySQL", "XAML"],
@@ -81,7 +69,7 @@ const projects: Project[] = [
     }
   },
   {
-    id: 6,
+    id: 5,
     title: "Gestion de site de vacances",
     description: "Réalisation d'une application web en PHP qui gère un site de vacances. Développée en Programmation Orientée Objet avec EasyPHP et gestion de la base de données MySQL.",
     image: "https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
