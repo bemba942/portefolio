@@ -16,10 +16,32 @@ interface Project {
     url: string;
     description: string;
   };
+  additionalScreenshots?: {
+    url: string;
+    description: string;
+  }[];
   pdfUrl?: string;
 }
 
 const projects: Project[] = [
+  {
+    id: 6,
+    title: "Stage Développement Web",
+    description: "Expérience professionnelle en développement web avec plusieurs projets, dont une application de quiz Unity avec Python et Kivy, ainsi qu'une interface de communication de type Discord.",
+    image: "/lovable-uploads/bf5739fb-4d70-4573-b7ed-216578b83b45.png",
+    technologies: ["Python", "Kivy", "Unity", "HTML/CSS", "JavaScript"],
+    githubUrl: "http://bemba942.github.io/projet/",
+    screenshot: {
+      url: "/lovable-uploads/bf5739fb-4d70-4573-b7ed-216578b83b45.png",
+      description: "Interface Discord avec salons vocaux et conversation"
+    },
+    additionalScreenshots: [
+      {
+        url: "/lovable-uploads/fb235090-a067-40b8-97ac-52124b5940d0.png", 
+        description: "Application Unity Quiz développée avec Python et Kivy"
+      }
+    ]
+  },
   {
     id: 1,
     title: "Gestion d'un zoo",
@@ -125,7 +147,7 @@ const Projects = () => {
               <CardContent>
                 <p className="text-muted-foreground">{project.description}</p>
               </CardContent>
-              <CardFooter className="flex justify-between gap-2">
+              <CardFooter className="flex flex-wrap justify-between gap-2">
                 {project.githubUrl && (
                   <Button variant="outline" size="sm" asChild>
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
@@ -165,6 +187,36 @@ const Projects = () => {
                           alt={project.screenshot.description}
                           className="rounded-md max-h-[70vh] w-auto"
                         />
+                      </div>
+                    </DialogContent>
+                  </Dialog>
+                )}
+                
+                {project.additionalScreenshots && project.additionalScreenshots.length > 0 && (
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button variant="outline" size="sm">
+                        <Image className="mr-2 h-4 w-4" />
+                        Plus d'images
+                      </Button>
+                    </DialogTrigger>
+                    <DialogContent className="sm:max-w-md">
+                      <DialogHeader>
+                        <DialogTitle>{project.title} - Captures supplémentaires</DialogTitle>
+                      </DialogHeader>
+                      <div className="space-y-4">
+                        {project.additionalScreenshots.map((screenshot, index) => (
+                          <div key={index} className="flex flex-col space-y-2">
+                            <p className="text-sm text-muted-foreground">{screenshot.description}</p>
+                            <div className="flex items-center justify-center p-2">
+                              <img
+                                src={screenshot.url}
+                                alt={screenshot.description}
+                                className="rounded-md max-h-[70vh] w-auto"
+                              />
+                            </div>
+                          </div>
+                        ))}
                       </div>
                     </DialogContent>
                   </Dialog>
