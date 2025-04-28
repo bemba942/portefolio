@@ -81,7 +81,7 @@ const About = () => {
           <h2 className="section-heading">À propos de moi</h2>
           <div className="section-subheading space-y-4 max-w-3xl mx-auto">
             <p>
-              Je suis <strong>Edy Florvil</strong>, étudiant en 2<sup>e</sup> année de <strong>BTS SIO</strong> (Services Informatiques aux Organisations), option <strong>SLAM</strong> (Solutions Logicielles et Applications Métiers) au lycée Parc de Vilgénis à Massy.
+              Je suis <strong>Bemba KEBE</strong>, étudiant en 2<sup>e</sup> année de <strong>BTS SIO</strong> (Services Informatiques aux Organisations), option <strong>SLAM</strong> (Solutions Logicielles et Applications Métiers) au lycée Parc de Vilgénis à Massy.
             </p>
             <p>
               Tout au long de ma formation, j'ai appris à concevoir, développer et maintenir des applications modernes, fonctionnelles et adaptées aux besoins réels des utilisateurs. J'ai mené plusieurs projets en autonomie ou en équipe, en utilisant des technologies variées du web et du développement logiciel.
