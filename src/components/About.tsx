@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { GraduationCap, Briefcase, Headset, FileDown } from 'lucide-react';
+import { GraduationCap, Briefcase, Headset, FileDown, Code, Shield } from 'lucide-react';
 import TimelineSection from './about/TimelineSection';
 import VeilleCard from './about/VeilleCard';
 import InterestsSection from './about/InterestsSection';
@@ -101,6 +101,42 @@ const About = () => {
                 Télécharger mon CV
               </a>
             </Button>
+          </div>
+        </div>
+
+        {/* BTS SIO Presentation Section */}
+        <div className="mt-16 animate-fade-up">
+          <h3 className="text-2xl md:text-3xl font-display font-bold mb-6 text-center">La Formation BTS SIO</h3>
+          <p className="text-xl max-w-5xl mx-auto leading-relaxed mb-12">
+            Le <strong>BTS Services Informatiques aux Organisations (SIO)</strong> est un diplôme en deux ans destiné à former des professionnels capables de gérer des projets informatiques, de développer des applications, ou d'administrer des systèmes et des réseaux. Cette formation s'adresse aux passionnés de technologie souhaitant intégrer rapidement le marché du travail ou poursuivre leurs études.
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-8 mt-10">
+            {/* SLAM */}
+            <div className="bg-card rounded-2xl p-8 border-2 border-primary/20 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-center mb-4">
+                <div className="icon-container bg-primary text-primary-foreground">
+                  <Code className="h-5 w-5" />
+                </div>
+                <h3 className="text-2xl font-bold text-primary ml-3">Option SLAM</h3>
+              </div>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                L'option <strong>SLAM (Solutions Logicielles et Applications Métiers)</strong> forme à la conception et au développement de programmes, sites web, applications mobiles et à la gestion de bases de données. Les étudiants apprennent à coder, tester, déployer et maintenir des solutions numériques sur mesure.
+              </p>
+            </div>
+            
+            {/* SISR */}
+            <div className="bg-card rounded-2xl p-8 border-2 border-primary/20 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-center mb-4">
+                <div className="icon-container bg-primary text-primary-foreground">
+                  <Shield className="h-5 w-5" />
+                </div>
+                <h3 className="text-2xl font-bold text-primary ml-3">Option SISR</h3>
+              </div>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                L'option <strong>SISR (Solutions d'Infrastructure, Systèmes et Réseaux)</strong> prépare aux métiers de l'administration réseau et de la cybersécurité. Elle enseigne la configuration de serveurs, le déploiement de systèmes, la gestion des droits utilisateurs, et le maintien de la sécurité informatique.
+              </p>
+            </div>
           </div>
         </div>
 
