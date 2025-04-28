@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -25,15 +26,15 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: 7,
-    title: "Application Mobile de Quiz",
-    description: "Développement en équipe d'une application mobile de quiz interactive. Ce projet collaboratif permet aux utilisateurs de tester leurs connaissances dans différentes catégories tout en offrant une interface intuitive et engageante.",
-    image: "/lovable-uploads/fb235090-a067-40b8-97ac-52124b5940d0.png",
-    technologies: ["React Native", "JavaScript", "API REST", "Mobile UI/UX"],
-    githubUrl: "http://bemba942.github.io/projet/",
+    id: 8,
+    title: "Projet de Stage: Système d'Information",
+    description: "Projet réalisé en stage portant sur la création d'un système d'information pour la gestion de ressources. Mise en place d'interfaces utilisateur intuitives et développement de fonctionnalités de suivi et de reporting.",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    githubUrl: "https://bemba942.github.io/projet/stage_projet/index.html",
     screenshot: {
-      url: "/lovable-uploads/fb235090-a067-40b8-97ac-52124b5940d0.png",
-      description: "Interface principale de l'application mobile de quiz"
+      url: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+      description: "Interface du système d'information développé en stage"
     },
   },
   {
