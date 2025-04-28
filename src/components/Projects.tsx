@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Image, Github, FileText } from 'lucide-react';
+import { Image, Github, FileText, Smartphone } from 'lucide-react';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
 interface Project {
@@ -24,6 +24,18 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    id: 7,
+    title: "Application Mobile de Quiz",
+    description: "Développement en équipe d'une application mobile de quiz interactive. Ce projet collaboratif permet aux utilisateurs de tester leurs connaissances dans différentes catégories tout en offrant une interface intuitive et engageante.",
+    image: "/lovable-uploads/fb235090-a067-40b8-97ac-52124b5940d0.png",
+    technologies: ["React Native", "JavaScript", "API REST", "Mobile UI/UX"],
+    githubUrl: "http://bemba942.github.io/projet/",
+    screenshot: {
+      url: "/lovable-uploads/fb235090-a067-40b8-97ac-52124b5940d0.png",
+      description: "Interface principale de l'application mobile de quiz"
+    },
+  },
   {
     id: 6,
     title: "Stage Développement Web",
