@@ -53,11 +53,11 @@ const Index = () => {
                 Étudiant BTS SIO option SLAM
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
-                Bonjour, je suis <span className="text-primary">Bemba KEBE</span>
+                Bonjour, je suis <span className="text-primary">Edy Florvil</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-lg mx-auto">
                 Étudiant en BTS SIO SLAM, passionné par le développement d'applications web et mobiles.
-                Curieux, motivé et déterminé à progresser dans l'informatique et la cybersécurité.
+                Curieux, rigoureux, autonome et déterminé à progresser dans l'informatique.
               </p>
               
               <div className="flex flex-wrap gap-4 justify-center">

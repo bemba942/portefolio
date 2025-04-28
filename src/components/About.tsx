@@ -79,9 +79,20 @@ const About = () => {
             Parcours
           </span>
           <h2 className="section-heading">À propos de moi</h2>
-          <p className="section-subheading">
-            Je m'appelle Bemba KEBE, j'ai 20 ans et je suis né en 2005. Je suis actuellement étudiant en BTS SIO option SLAM à Massy.
-          </p>
+          <div className="section-subheading space-y-4 max-w-3xl mx-auto">
+            <p>
+              Je suis <strong>Edy Florvil</strong>, étudiant en 2<sup>e</sup> année de <strong>BTS SIO</strong> (Services Informatiques aux Organisations), option <strong>SLAM</strong> (Solutions Logicielles et Applications Métiers) au lycée Parc de Vilgénis à Massy.
+            </p>
+            <p>
+              Tout au long de ma formation, j'ai appris à concevoir, développer et maintenir des applications modernes, fonctionnelles et adaptées aux besoins réels des utilisateurs. J'ai mené plusieurs projets en autonomie ou en équipe, en utilisant des technologies variées du web et du développement logiciel.
+            </p>
+            <p>
+              Mes compétences principales incluent : HTML, CSS, JavaScript, PHP, SQL, Python et C#. Je maîtrise également la gestion de bases de données relationnelles, la modélisation (MCD/MLD) et la structuration de projets.
+            </p>
+            <p>
+              Curieux, rigoureux, autonome et passionné par les technologies, je suis toujours prêt à relever de nouveaux défis dans le domaine du développement informatique.
+            </p>
+          </div>
           
           <div className="mt-6">
             <Button className="button-primary" asChild>
