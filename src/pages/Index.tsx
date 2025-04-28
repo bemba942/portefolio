@@ -56,7 +56,8 @@ const Index = () => {
                 Bonjour, je suis <span className="text-primary">Bemba KEBE</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-lg mx-auto">
-                Étudiant en BTS SIO et passionné par le développement d'applications. Mon état d'esprit positif et enthousiaste me pousse à me dépasser et à poursuivre mes objectifs avec passion et détermination.
+                Étudiant en BTS SIO SLAM, passionné par le développement d'applications web et mobiles.
+                Curieux, motivé et déterminé à progresser dans l'informatique et la cybersécurité.
               </p>
               
               <div className="flex flex-wrap gap-4 justify-center">
