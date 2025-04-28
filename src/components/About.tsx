@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { GraduationCap, Briefcase, Headset, FileDown } from 'lucide-react';
@@ -79,7 +80,7 @@ const About = () => {
           </span>
           <h2 className="section-heading">À propos de moi</h2>
           <p className="section-subheading">
-            Je m'appelle Bemba KEBE, j'ai 19 ans et je suis né en 2005. Je suis actuellement étudiant en BTS SIO option SLAM à Massy.
+            Je m'appelle Bemba KEBE, j'ai 20 ans et je suis né en 2005. Je suis actuellement étudiant en BTS SIO option SLAM à Massy.
           </p>
           
           <div className="mt-6">
