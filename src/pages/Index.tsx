@@ -103,16 +103,16 @@ const Index = () => {
           </div>
           
           <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <a href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
               <ArrowDown className="h-8 w-8" />
             </a>
           </div>
         </div>
       </section>
       
+      <About />
       <Projects />
       <Skills />
-      <About />
       <Contact />
       <Footer />
     </div>
