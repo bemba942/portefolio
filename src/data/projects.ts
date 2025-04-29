@@ -71,8 +71,8 @@ export const projects: Project[] = [
     technologies: ["C#", "MySQL", "XAML"],
     githubUrl: "http://bemba942.github.io/projet/",
     screenshot: {
-      url: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80", 
-      description: "Interface de l'application avec menu principal"
+      url: "/lovable-uploads/272555f8-0dc8-4571-bf17-6b2dd74d8717.png", 
+      description: "Menu principal de l'application de gestion de DVD avec options de gestion des clients, DVD, locations et statistiques"
     }
   },
   {
