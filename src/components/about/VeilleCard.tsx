@@ -1,24 +1,12 @@
 
 import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { ShieldCheck, Key, Info, AlertTriangle } from 'lucide-react';
+import { Glasses, Monitor, Building2, Info, Lightbulb } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { AspectRatio } from '@/components/ui/aspect-ratio';
-import { toast } from '@/hooks/use-toast';
 
 const VeilleCard = () => {
   const [isDetailOpen, setIsDetailOpen] = useState(false);
-  const [showProof, setShowProof] = useState(false);
-
-  const handleShowProof = () => {
-    setShowProof(true);
-    toast({
-      title: "Preuves affichées",
-      description: "Les preuves de tentative de piratage ont été chargées.",
-    });
-  };
 
   return (
     <Card className="overflow-hidden border-0 shadow-md animate-fade-up">
@@ -26,145 +14,121 @@ const VeilleCard = () => {
         <div className="flex items-start">
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-3">
-              <ShieldCheck className="h-6 w-6 text-primary" />
-              <h4 className="text-lg font-semibold">Ma veille sur l'A2F</h4>
+              <Glasses className="h-6 w-6 text-primary" />
+              <h4 className="text-lg font-semibold">Ma veille sur les casques VR et réalité mixte</h4>
             </div>
             
             <div className="space-y-4">
               <p className="text-muted-foreground">
-                J'ai appris ce qu'est l'Authentification à Deux Facteurs (A2F). J'ai constaté son importance après avoir été victime de tentatives de piratage sur mes comptes.
+                Ma veille technologique porte sur la différence entre les casques de réalité virtuelle (VR) et les casques de réalité mixte/augmentée (AR/MR), ainsi que leurs usages en entreprise.
               </p>
-              
+
               <div className="bg-primary/5 p-4 rounded-lg space-y-2">
                 <h5 className="font-semibold flex items-center gap-2">
-                  <Key className="h-4 w-4" />
-                  Ce que je sais aujourd'hui
+                  <Monitor className="h-4 w-4" />
+                  Réalité Virtuelle (VR)
                 </h5>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                  <li>L'A2F demande deux choses pour se connecter, comme un mot de passe et un code par SMS</li>
-                  <li>On peut recevoir le code par SMS, par application ou avec une clé USB spéciale</li>
-                  <li>Ça protège mieux nos comptes contre les pirates</li>
-                  <li>J'ai expérimenté l'A2F lors de tentatives de piratage sur mes comptes personnels</li>
+                  <li>Immersion totale dans un monde 100% virtuel</li>
+                  <li>L'utilisateur ne voit plus le monde réel</li>
+                  <li>Exemples : Meta Quest, PlayStation VR, HTC Vive</li>
+                  <li>Utilisé pour le gaming, les simulations, la formation immersive</li>
                 </ul>
               </div>
-              
-              <div className="bg-secondary/20 p-4 rounded-lg">
-                <h5 className="font-semibold mb-2">Mes projets</h5>
-                <p className="text-sm text-muted-foreground">
-                  Plus tard, je veux ajouter l'A2F dans mes sites web, avec Laravel ou C#. Ça les rendra plus sécurisés.
-                </p>
+
+              <div className="bg-secondary/20 p-4 rounded-lg space-y-2">
+                <h5 className="font-semibold flex items-center gap-2">
+                  <Glasses className="h-4 w-4" />
+                  Réalité Mixte / Augmentée (AR/MR)
+                </h5>
+                <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
+                  <li>Superposition d'éléments virtuels sur le monde réel</li>
+                  <li>L'utilisateur voit toujours son environnement réel</li>
+                  <li>Exemples : Apple Vision Pro, Microsoft HoloLens, Magic Leap</li>
+                  <li>Permet l'interaction avec des objets virtuels dans l'espace réel</li>
+                </ul>
               </div>
 
               <div className="bg-primary/5 p-4 rounded-lg">
-                <h5 className="font-semibold mb-2">Pourquoi c'est important ?</h5>
-                <p className="text-sm text-muted-foreground">
-                  Après avoir constaté des tentatives de piratage sur mes propres comptes, j'ai compris l'importance de l'A2F pour empêcher les personnes non autorisées d'accéder aux comptes même si le mot de passe est compromis.
-                </p>
-              </div>
-
-              <div className="bg-destructive/10 p-4 rounded-lg">
                 <h5 className="font-semibold flex items-center gap-2 mb-2">
-                  <AlertTriangle className="h-4 w-4 text-destructive" />
-                  Mon expérience personnelle
+                  <Building2 className="h-4 w-4" />
+                  Usages en entreprise
                 </h5>
-                <p className="text-sm text-muted-foreground mb-3">
-                  J'ai été la cible de tentatives de piratage sur mon compte Snapchat, ce qui m'a permis de comprendre l'importance cruciale de l'A2F dans la protection des comptes en ligne.
-                </p>
-                <Button 
-                  variant="outline" 
-                  size="sm" 
-                  className="w-full" 
-                  onClick={handleShowProof}
-                >
-                  Voir les preuves
-                </Button>
+                <div className="space-y-3 text-sm text-muted-foreground">
+                  <div>
+                    <p className="font-medium text-foreground">Réalité Virtuelle :</p>
+                    <ul className="list-disc pl-5 mt-1">
+                      <li>Formation des employés (simulations de situations dangereuses)</li>
+                      <li>Conception et prototypage de produits</li>
+                      <li>Réunions virtuelles immersives</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="font-medium text-foreground">Réalité Mixte :</p>
+                    <ul className="list-disc pl-5 mt-1">
+                      <li>Maintenance industrielle avec instructions superposées</li>
+                      <li>Collaboration à distance avec des hologrammes</li>
+                      <li>Visualisation de données 3D dans l'espace de travail</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
 
-              {showProof && (
-                <div className="mt-4">
-                  <h5 className="font-semibold mb-3">Preuves de tentatives de piratage</h5>
-                  <Carousel className="w-full max-w-xs mx-auto">
-                    <CarouselContent>
-                      <CarouselItem>
-                        <AspectRatio ratio={9/16} className="bg-muted">
-                          <img 
-                            src="/lovable-uploads/3d92b3ec-e1f7-4204-8a89-1c465f2a3e0e.png" 
-                            alt="Code de connexion à Snapchat" 
-                            className="object-cover w-full h-full rounded-md"
-                          />
-                        </AspectRatio>
-                      </CarouselItem>
-                      <CarouselItem>
-                        <AspectRatio ratio={9/16} className="bg-muted">
-                          <img 
-                            src="/lovable-uploads/6487e009-ea47-48cf-b630-baa2ec492f9d.png" 
-                            alt="Tentative de connexion échouée" 
-                            className="object-cover w-full h-full rounded-md"
-                          />
-                        </AspectRatio>
-                      </CarouselItem>
-                      <CarouselItem>
-                        <AspectRatio ratio={9/16} className="bg-muted">
-                          <img 
-                            src="/lovable-uploads/0dbb492f-79ac-460e-b671-a3424eb94823.png" 
-                            alt="Multiples codes de connexion reçus" 
-                            className="object-cover w-full h-full rounded-md"
-                          />
-                        </AspectRatio>
-                      </CarouselItem>
-                      <CarouselItem>
-                        <AspectRatio ratio={9/16} className="bg-muted">
-                          <img 
-                            src="/lovable-uploads/deb79c48-a20e-4e8e-8508-74223ebfc29f.png" 
-                            alt="Alerte de nouvelle connexion" 
-                            className="object-cover w-full h-full rounded-md"
-                          />
-                        </AspectRatio>
-                      </CarouselItem>
-                      <CarouselItem>
-                        <AspectRatio ratio={9/16} className="bg-muted">
-                          <img 
-                            src="/lovable-uploads/abb64afe-0a91-4087-916a-f70981e44248.png" 
-                            alt="Compte temporairement bloqué" 
-                            className="object-cover w-full h-full rounded-md"
-                          />
-                        </AspectRatio>
-                      </CarouselItem>
-                    </CarouselContent>
-                    <CarouselPrevious className="left-0" />
-                    <CarouselNext className="right-0" />
-                  </Carousel>
-                  <p className="text-xs text-center text-muted-foreground mt-2">
-                    Ces captures d'écran montrent des tentatives de piratage sur mon compte Snapchat et l'importance de l'A2F
-                  </p>
-                </div>
-              )}
+              <div className="bg-secondary/20 p-4 rounded-lg">
+                <h5 className="font-semibold flex items-center gap-2 mb-2">
+                  <Lightbulb className="h-4 w-4" />
+                  Ma conclusion
+                </h5>
+                <p className="text-sm text-muted-foreground">
+                  La VR est idéale pour une immersion totale, tandis que la réalité mixte permet de garder le contact avec le monde réel. Les entreprises choisissent selon leurs besoins : formation immersive (VR) ou assistance en temps réel (AR/MR).
+                </p>
+              </div>
 
               <div className="mt-4 flex flex-col items-center gap-3">
                 <Dialog open={isDetailOpen} onOpenChange={setIsDetailOpen}>
                   <DialogTrigger asChild>
                     <Button variant="outline" className="gap-2">
                       <Info className="h-4 w-4" />
-                      Plus de detail sur ma veille
+                      Plus de détails sur ma veille
                     </Button>
                   </DialogTrigger>
-                  <DialogContent className="max-w-lg">
+                  <DialogContent className="max-w-lg max-h-[80vh] overflow-y-auto">
                     <DialogHeader>
-                      <DialogTitle>Ma veille sur l'A2F</DialogTitle>
+                      <DialogTitle>Ma veille sur VR vs Réalité Mixte</DialogTitle>
                     </DialogHeader>
                     <div className="space-y-4 text-muted-foreground">
-                      <p>
-                        L'A2F veut dire qu'il faut deux preuves pour se connecter : par exemple, un mot de passe et un code reçu par SMS ou par une application.
-                      </p>
-                      <p>
-                        J'ai pu constater par moi-même l'importance de l'A2F lorsque mon compte Snapchat a été la cible de tentatives de piratage. J'ai reçu plusieurs codes de connexion par SMS et des alertes de connexions non autorisées.
-                      </p>
-                      <p>
-                        Grâce à l'A2F, les attaquants n'ont pas réussi à accéder à mon compte malgré leurs nombreuses tentatives, car ils ne possédaient pas mon téléphone pour recevoir les codes.
-                      </p>
-                      <p>
-                        Cette expérience m'a convaincu de l'importance d'implémenter cette fonctionnalité dans mes futures applications pour protéger les données des utilisateurs.
-                      </p>
+                      <div>
+                        <h6 className="font-semibold text-foreground mb-1">Problématique</h6>
+                        <p>
+                          Comprendre la différence entre les casques de réalité virtuelle et les casques de réalité mixte/augmentée, et identifier dans quels cas les entreprises les utilisent.
+                        </p>
+                      </div>
+                      <div>
+                        <h6 className="font-semibold text-foreground mb-1">Différences techniques</h6>
+                        <p>
+                          La VR crée un environnement entièrement numérique où l'utilisateur est coupé du monde réel. La réalité mixte, elle, superpose des éléments virtuels sur le monde réel grâce à des caméras et capteurs.
+                        </p>
+                      </div>
+                      <div>
+                        <h6 className="font-semibold text-foreground mb-1">Cas d'usage en entreprise</h6>
+                        <p>
+                          Les entreprises utilisent la VR principalement pour la formation (simulations de situations dangereuses, onboarding) et la conception de produits. La réalité mixte est privilégiée pour l'assistance à distance, la maintenance industrielle et la collaboration avec des modèles 3D.
+                        </p>
+                      </div>
+                      <div>
+                        <h6 className="font-semibold text-foreground mb-1">Exemples concrets</h6>
+                        <ul className="list-disc pl-5 mt-1">
+                          <li>Airbus utilise HoloLens pour la maintenance d'avions</li>
+                          <li>Walmart forme ses employés avec des casques VR</li>
+                          <li>Les architectes visualisent leurs projets en réalité mixte</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h6 className="font-semibold text-foreground mb-1">Conclusion</h6>
+                        <p>
+                          Le choix entre VR et réalité mixte dépend du besoin : immersion totale ou interaction avec l'environnement réel. Les deux technologies sont complémentaires et continueront d'évoluer dans le monde professionnel.
+                        </p>
+                      </div>
                     </div>
                   </DialogContent>
                 </Dialog>
