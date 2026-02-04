@@ -25,12 +25,30 @@ export const projects: Project[] = [
     id: 9,
     title: "Stage 2025: Prototype IoT & Développement Web",
     description: "Projet prototype combinant électronique et développement web. Détection de produits via tags RFID (ronds et carrés), soudure de PCB, flashage et calibration des antennes. Développement d'un site pour bar en Node.js avec Vue.js. Environnement Linux avec Arduino, VS Code et GitLab.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    image: "/lovable-uploads/stage-2025-table-rfid.jpeg",
     technologies: ["Linux", "Node.js", "Vue.js", "Arduino", "RFID", "Git"],
     screenshot: {
-      url: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-      description: "Projet prototype IoT avec tags RFID et développement web"
+      url: "/lovable-uploads/stage-2025-table-rfid.jpeg",
+      description: "Table interactive avec détection RFID et interface Blackfade"
     },
+    additionalScreenshots: [
+      {
+        url: "/lovable-uploads/stage-2025-arduino-code.jpeg",
+        description: "Code Arduino pour lecteurs RFID MFRC522"
+      },
+      {
+        url: "/lovable-uploads/stage-2025-tag-ids.jpeg",
+        description: "Enregistrement et calibration des IDs de tags RFID"
+      },
+      {
+        url: "/lovable-uploads/stage-2025-calibrator.jpeg",
+        description: "Logiciel Calibrator connecté au port COM3"
+      },
+      {
+        url: "/lovable-uploads/stage-2025-hardware.jpeg",
+        description: "Vue d'ensemble du matériel : PCB, câblage et composants électroniques"
+      }
+    ]
   },
   {
     id: 8,
