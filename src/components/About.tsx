@@ -57,6 +57,14 @@ const timelineItems: TimelineItem[] = [
     type: "internship"
   },
   {
+    id: 7,
+    title: "Stage Développement & Électronique",
+    organization: "Entreprise (Stage 2025)",
+    period: "2025",
+    description: "Participation à un projet prototype IoT : détection de produits via tags RFID, soudure de PCB, calibration d'antennes sous Linux. Développement d'un site web en Node.js avec Vue.js.",
+    type: "internship"
+  },
+  {
     id: 6,
     title: "Veille technologique sur l'Authentification à Deux Facteurs (2FA)",
     organization: "Personnelle",
