@@ -22,6 +22,24 @@ export interface Project {
 // Project data
 export const projects: Project[] = [
   {
+    id: 10,
+    title: "Gestion VVA - Village Vacances",
+    description: "Application web de gestion d'un village vacances permettant la réservation d'hébergements et d'activités. Interface d'administration avec tableau de bord statistique, gestion des clients et suivi des réservations en temps réel.",
+    image: "/lovable-uploads/vva-dashboard-admin.png",
+    technologies: ["PHP", "MySQL", "HTML/CSS", "JavaScript"],
+    githubUrl: "http://bemba942.github.io/projet/",
+    screenshot: {
+      url: "/lovable-uploads/vva-dashboard-admin.png",
+      description: "Tableau de bord administration avec statistiques des hébergements et réservations"
+    },
+    additionalScreenshots: [
+      {
+        url: "/lovable-uploads/vva-accueil-hebergements.png",
+        description: "Page d'accueil avec liste des hébergements disponibles et tarifs"
+      }
+    ]
+  },
+  {
     id: 9,
     title: "Stage 2025: Prototype IoT & Développement Web",
     description: "Projet prototype combinant électronique et développement web. Détection de produits via tags RFID (ronds et carrés), soudure de PCB, flashage et calibration des antennes. Développement d'un site pour bar en Node.js avec Vue.js. Environnement Linux avec Arduino, VS Code et GitLab.",
