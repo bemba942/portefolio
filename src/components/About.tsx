@@ -66,10 +66,10 @@ const timelineItems: TimelineItem[] = [
   },
   {
     id: 6,
-    title: "Veille technologique sur l'Authentification à Deux Facteurs (2FA)",
+    title: "Veille technologique sur les Voitures Autonomes",
     organization: "Personnelle",
-    period: "Continu",
-    description: "Veille sur les systèmes d'authentification à deux facteurs, leur importance dans la sécurité des comptes et leur implémentation dans les projets de développement.",
+    period: "2023 - 2025",
+    description: "Veille sur les voitures autonomes : fonctionnement, niveaux d'autonomie, technologies (IA, capteurs, cloud) et évolutions pendant mes 2 années de BTS SIO.",
     type: "veille"
   }
 ];
