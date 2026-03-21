@@ -46,7 +46,7 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <a href="#home" className="text-xl font-display font-bold">
-            Portfolio
+            Portefolio
           </a>
 
           {/* Desktop Navigation */}

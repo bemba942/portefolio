@@ -35,7 +35,7 @@ const Footer = () => {
               &copy; {currentYear} Bemba KEBE. Tous droits réservés.
             </p>
             <p className="mt-2 text-xs text-muted-foreground flex items-center justify-center">
-              Portfolio BTS SIO <span className="mx-1 text-red-500">♥</span> option SLAM
+              Portefolio BTS SIO <span className="mx-1 text-red-500">♥</span> option SLAM
             </p>
           </div>
         </div>
