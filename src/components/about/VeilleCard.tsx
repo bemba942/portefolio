@@ -23,9 +23,6 @@ const VeilleCard = () => {
             <p>
               Ma veille porte sur les <strong>voitures autonomes</strong>, c'est-à-dire des voitures capables de rouler <strong>toutes seules</strong>, sans que le conducteur ait besoin de toucher le volant.
             </p>
-            <p className="mt-2 font-medium text-foreground">
-              Ma question : « Comment fonctionnent les voitures autonomes et qu'est-ce qui a changé entre 2023 et 2025 ? »
-            </p>
           </Section>
 
           {/* 2. COMMENT ÇA MARCHE */}
