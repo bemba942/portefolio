@@ -104,7 +104,7 @@ const About = () => {
           
           <div className="mt-6">
             <Button className="button-primary" asChild>
-              <a href="https://preview--cv-adaptor-optimizer.lovable.app" target="_blank" rel="noopener noreferrer">
+              <a href="/CV_Bemba_KEBE.pdf" download="CV_Bemba_KEBE.pdf">
                 <FileDown className="mr-2 h-4 w-4" />
                 Télécharger mon CV
               </a>
