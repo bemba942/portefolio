@@ -79,31 +79,6 @@ const VeilleCard = () => {
             </div>
           </Section>
 
-          {/* 5. ÉVOLUTIONS 2023-2025 */}
-          <Section icon={<Calendar className="h-4 w-4" />} title="Ce qui a changé pendant mon BTS (2023 → 2025)" variant="primary">
-            <div className="space-y-3">
-              <YearBlock year="2023" label="Début de mon BTS" items={[
-                "Mercedes obtient le droit de rouler en niveau 3 (premier au monde !)",
-                "Waymo (Google) lance des taxis sans chauffeur à Phoenix et San Francisco",
-                "Tesla ouvre son système FSD (conduite autonome) à plus de conducteurs",
-                "Cruise (General Motors) arrête ses taxis autonomes après un accident",
-              ]} />
-              <YearBlock year="2024" label="Ma 2ème année" items={[
-                "Waymo fait plus de 100 000 trajets par semaine aux USA",
-                "Tesla présente le Cybercab, un futur robotaxi prévu pour 2026",
-                "La Chine devient un leader avec Baidu qui lance des robotaxis à Wuhan",
-                "Apple abandonne son projet de voiture autonome (Projet Titan)",
-                "L'Europe crée de nouvelles règles pour encadrer les voitures autonomes",
-              ]} />
-              <YearBlock year="2025" label="Fin de mon BTS" items={[
-                "Waymo s'étend à Austin et Atlanta",
-                "Tesla améliore son IA avec la version 13 du FSD",
-                "Mercedes et BMW proposent le niveau 3 sur autoroute en Europe",
-                "Les premiers camions autonomes roulent sur les autoroutes aux USA",
-                "Gros débats sur : qui est responsable si la voiture a un accident ?",
-              ]} />
-            </div>
-          </Section>
 
           {/* 6. TESLA vs WAYMO */}
           <Section icon={<Car className="h-4 w-4" />} title="Tesla vs Waymo : 2 approches différentes" variant="secondary">
