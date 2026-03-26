@@ -11,10 +11,13 @@ const VeilleCard = () => {
   return (
     <Card className="overflow-hidden border-0 shadow-md animate-fade-up">
       <CardContent className="p-6">
-        <div className="flex items-center gap-2 mb-4">
+        <div className="flex items-center gap-2 mb-2">
           <Car className="h-6 w-6 text-primary" />
           <h4 className="text-lg font-semibold">Les voitures autonomes</h4>
         </div>
+        <p className="text-sm italic text-primary font-medium mb-4">
+          Problématique : En quoi les voitures autonomes peuvent-elles être utiles dans le domaine de la santé ?
+        </p>
 
         <div className="space-y-4 text-sm text-muted-foreground">
           <Section icon={<Eye className="h-4 w-4" />} title="Principe">
