@@ -12,7 +12,7 @@ const VeilleCard = () => {
           <h4 className="text-lg font-semibold">Les voitures autonomes</h4>
         </div>
         <p className="text-sm italic text-primary font-medium mb-4">
-          Problématique : En quoi les voitures autonomes peuvent-elles être utiles dans le domaine de la santé ?
+          Problématique : En quoi les voitures autonomes transforment-elles notre rapport à la mobilité et quels défis technologiques restent à relever ?
         </p>
 
         <div className="space-y-4 text-sm text-muted-foreground">
