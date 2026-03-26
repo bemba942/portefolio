@@ -51,11 +51,10 @@ const VeilleCard = () => {
 
           <Section icon={<Scale className="h-4 w-4" />} title="Enjeux & défis">
             <div className="flex flex-wrap gap-2 mt-1">
-              <Tag>🔒 Cybersécurité / piratage</Tag>
-              <Tag>🤖 Fiabilité de l'IA</Tag>
-              <Tag>⚖️ Responsabilité légale</Tag>
-              <Tag>🧠 Éthique (dilemme du tramway)</Tag>
-              <Tag>👷 Impact emploi</Tag>
+              <Tag>🔒 Piratage / hacking</Tag>
+              <Tag>🤖 L'IA peut se tromper</Tag>
+              <Tag>⚖️ Qui est responsable en cas d'accident ?</Tag>
+              <Tag>👷 Moins de chauffeurs = moins d'emplois</Tag>
             </div>
           </Section>
 
