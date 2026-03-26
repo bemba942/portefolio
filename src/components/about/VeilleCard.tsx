@@ -11,9 +11,6 @@ const VeilleCard = () => {
           <Car className="h-6 w-6 text-primary" />
           <h4 className="text-lg font-semibold">Les voitures autonomes</h4>
         </div>
-        <p className="text-sm italic text-primary font-medium mb-4">
-          Problématique : En quoi les voitures autonomes transforment-elles la mobilité et quels défis technologiques restent à relever ?
-        </p>
 
         <div className="space-y-4 text-sm text-muted-foreground">
           <Section icon={<Eye className="h-4 w-4" />} title="Définition">
