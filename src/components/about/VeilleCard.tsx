@@ -33,7 +33,7 @@ const VeilleCard = () => {
 
           <Section icon={<CheckCircle className="h-4 w-4" />} title="Synthèse">
             <p>
-              Les voitures autonomes représentent une avancée majeure liée à <strong>l'IA, la cybersécurité et les réseaux</strong>, trois domaines au cœur du BTS SIO. Dans le domaine de la <strong>santé</strong>, elles pourraient permettre le <strong>transport automatisé de patients</strong> (personnes âgées, handicapées), la <strong>livraison de médicaments ou d'organes</strong> en urgence, et l'accès aux soins dans les <strong>zones rurales</strong> mal desservies. Cette veille m'a permis de développer ma capacité à rechercher, analyser et synthétiser des informations techniques de manière autonome.
+              Les voitures autonomes représentent une avancée majeure liée à <strong>l'IA, la cybersécurité et les réseaux</strong>, trois domaines au cœur du BTS SIO. Les technologies utilisées (capteurs, traitement de données en temps réel, communication cloud) sont en constante évolution, mais des <strong>défis majeurs</strong> persistent : fiabilité de l'IA, risques de piratage, questions de responsabilité légale et acceptation du public. Cette veille m'a permis de développer ma capacité à rechercher, analyser et synthétiser des informations techniques de manière autonome.
             </p>
           </Section>
         </div>
