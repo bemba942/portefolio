@@ -1,13 +1,9 @@
 
 import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Car, Cpu, Eye, Brain, Shield, Info } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Car, Eye, Search, CheckCircle } from 'lucide-react';
 
 const VeilleCard = () => {
-  const [isDetailOpen, setIsDetailOpen] = useState(false);
-
   return (
     <Card className="overflow-hidden border-0 shadow-md animate-fade-up">
       <CardContent className="p-6">
@@ -20,98 +16,26 @@ const VeilleCard = () => {
         </p>
 
         <div className="space-y-4 text-sm text-muted-foreground">
-          <Section icon={<Eye className="h-4 w-4" />} title="Principe">
-            <p>Des voitures capables de rouler seules grâce à des <strong>caméras, radars, LiDAR</strong> et une <strong>intelligence artificielle</strong> qui analyse la route et prend les décisions en temps réel.</p>
-            <p className="mt-1">Le fonctionnement suit <strong>4 étapes</strong> : perception (capteurs), analyse (IA), décision (freiner, tourner…), action (contrôle du véhicule).</p>
+          <Section icon={<Eye className="h-4 w-4" />} title="Qu'est-ce qu'une voiture autonome ?">
+            <p>Un véhicule capable de se déplacer sans intervention humaine grâce à des <strong>capteurs</strong> (caméras, radars, LiDAR) et une <strong>intelligence artificielle</strong> qui analyse l'environnement en temps réel.</p>
+            <p className="mt-1">Il existe <strong>6 niveaux d'autonomie</strong> (0 à 5). Aujourd'hui, les voitures les plus avancées atteignent le <strong>niveau 4</strong> (ex : Waymo), c'est-à-dire une conduite autonome dans des zones définies.</p>
           </Section>
 
-          <Section icon={<Cpu className="h-4 w-4" />} title="Les 6 niveaux d'autonomie (SAE)">
-            <div className="space-y-1">
-              <p><strong>Niveau 0</strong> : aucune aide, le conducteur fait tout</p>
-              <p><strong>Niveau 1-2</strong> : aides à la conduite (régulateur, maintien de voie). Ex : Tesla Autopilot (niveau 2)</p>
-              <p><strong>Niveau 3</strong> : la voiture conduit seule dans certaines conditions, le conducteur reprend si demandé. Ex : Mercedes Drive Pilot</p>
-              <p><strong>Niveau 4</strong> : autonomie complète dans des zones définies, sans conducteur. Ex : Waymo robotaxis</p>
-              <p><strong>Niveau 5</strong> : autonomie totale partout — n'existe pas encore</p>
+          <Section icon={<Search className="h-4 w-4" />} title="Ma méthode de veille (Pull)">
+            <p>J'utilise une méthode de veille <strong>pull</strong> : je vais chercher l'information moi-même, de manière active.</p>
+            <div className="mt-2 space-y-1">
+              <p>🔎 <strong>Outils de recherche</strong> — Google, Google Scholar, YouTube</p>
+              <p>🌐 <strong>Sites web spécialisés</strong> — The Verge, Electrek, Numerama, 01net</p>
+              <p>📄 <strong>Pages & articles</strong> — blogs tech, publications officielles des constructeurs (Tesla, Waymo, Mercedes)</p>
+              <p>📺 <strong>Vidéos</strong> — chaînes YouTube tech pour des explications visuelles</p>
             </div>
           </Section>
 
-          <Section icon={<Car className="h-4 w-4" />} title="Tesla vs Waymo">
-            <div className="grid grid-cols-2 gap-2 mt-1">
-              <div className="bg-background/50 p-2 rounded">
-                <p className="font-semibold text-foreground">Tesla</p>
-                <p>Caméras uniquement, niveau 2, voiture personnelle. Approche : « les caméras suffisent, comme les yeux humains »</p>
-              </div>
-              <div className="bg-background/50 p-2 rounded">
-                <p className="font-semibold text-foreground">Waymo (Google)</p>
-                <p>LiDAR + caméras + radar, niveau 4, service de taxi. Approche : « plusieurs capteurs pour plus de sécurité »</p>
-              </div>
-            </div>
+          <Section icon={<CheckCircle className="h-4 w-4" />} title="Synthèse">
+            <p>
+              Les voitures autonomes représentent une avancée majeure liée à <strong>l'IA, la cybersécurité et les réseaux</strong>, trois domaines au cœur du BTS SIO. Dans le domaine de la <strong>santé</strong>, elles pourraient permettre le <strong>transport automatisé de patients</strong> (personnes âgées, handicapées), la <strong>livraison de médicaments ou d'organes</strong> en urgence, et l'accès aux soins dans les <strong>zones rurales</strong> mal desservies. Cette veille m'a permis de développer ma capacité à rechercher, analyser et synthétiser des informations techniques de manière autonome.
+            </p>
           </Section>
-
-          <Section icon={<Brain className="h-4 w-4" />} title="Lien avec le BTS SIO">
-            <div className="grid grid-cols-2 gap-2 mt-1">
-              <p>💻 <strong>Programmation</strong> — Python, C++</p>
-              <p>🗄️ <strong>BDD</strong> — données capteurs/trajets</p>
-              <p>🌐 <strong>Réseaux</strong> — voiture ↔ cloud</p>
-              <p>🔒 <strong>Cybersécurité</strong> — anti-piratage</p>
-              <p>🤖 <strong>IA</strong> — analyse d'images</p>
-              <p>☁️ <strong>Cloud</strong> — traitement à distance</p>
-            </div>
-          </Section>
-
-          <Section icon={<Shield className="h-4 w-4" />} title="Enjeux et problèmes">
-            <ul className="list-disc pl-5 space-y-1">
-              <li><strong>Sécurité</strong> — la voiture doit être plus fiable qu'un humain</li>
-              <li><strong>Piratage</strong> — risque de prise de contrôle à distance</li>
-              <li><strong>Responsabilité</strong> — qui est coupable en cas d'accident ?</li>
-              <li><strong>Éthique</strong> — dilemme du tramway : comment l'IA choisit ?</li>
-              <li><strong>Emploi</strong> — impact sur les chauffeurs de taxi/routiers</li>
-            </ul>
-          </Section>
-
-          <div className="mt-4 flex justify-center">
-            <Dialog open={isDetailOpen} onOpenChange={setIsDetailOpen}>
-              <DialogTrigger asChild>
-                <Button variant="outline" className="gap-2">
-                  <Info className="h-4 w-4" />
-                  Plus de détail sur ma veille
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
-                <DialogHeader>
-                  <DialogTitle>Infos complémentaires</DialogTitle>
-                </DialogHeader>
-                <div className="space-y-4 text-sm text-muted-foreground">
-                  <div>
-                    <h6 className="font-semibold text-foreground mb-1">📊 Chiffres clés (2025)</h6>
-                    <ul className="list-disc pl-5 space-y-1">
-                      <li>Waymo : <strong>+100 000 trajets/semaine</strong> aux USA</li>
-                      <li>Tesla : <strong>+6 milliards de km</strong> de données collectées</li>
-                      <li>Marché estimé à <strong>2 000 milliards $</strong> d'ici 2030</li>
-                      <li>Plus de <strong>80 entreprises</strong> dans le monde</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h6 className="font-semibold text-foreground mb-1">🏢 Acteurs principaux</h6>
-                    <ul className="list-disc pl-5 space-y-1">
-                      <li>🇺🇸 <strong>Waymo</strong> (robotaxis), <strong>Tesla</strong> (IA + caméras), <strong>Aurora</strong> (camions)</li>
-                      <li>🇨🇳 <strong>Baidu</strong> (robotaxis), <strong>Pony.ai</strong></li>
-                      <li>🇪🇺 <strong>Mercedes</strong> (niveau 3 certifié), <strong>BMW</strong></li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h6 className="font-semibold text-foreground mb-1">🔍 Ma méthode de veille</h6>
-                    <ul className="list-disc pl-5 space-y-1">
-                      <li>Sites : The Verge, Electrek, Numerama</li>
-                      <li>Chaînes YouTube tech</li>
-                      <li>Newsletters et flux RSS</li>
-                      <li>Annonces officielles des constructeurs</li>
-                    </ul>
-                  </div>
-                </div>
-              </DialogContent>
-            </Dialog>
-          </div>
         </div>
       </CardContent>
     </Card>
