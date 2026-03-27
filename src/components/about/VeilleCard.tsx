@@ -77,12 +77,12 @@ const VeilleCard = () => {
           </Section>
 
           <Section icon={<CheckCircle className="h-4 w-4" />} title="Synthèse">
-            <div className="flex flex-wrap gap-2 mt-1">
-              <Tag>IA + Cybersécurité + Réseaux = cœur du BTS SIO</Tag>
-              <Tag>Technologies en constante évolution</Tag>
-              <Tag>Défis : fiabilité, sécurité, lois, éthique</Tag>
-              <Tag>Compétence acquise : recherche & analyse autonome</Tag>
-            </div>
+            <ul className="list-disc list-inside space-y-1.5 mt-1 text-foreground text-xs">
+              <li>Les voitures autonomes utilisent l'IA, les capteurs et les réseaux — ce sont des sujets qu'on étudie en BTS SIO.</li>
+              <li>C'est un domaine qui évolue très vite, avec de nouvelles avancées chaque année.</li>
+              <li>Il reste des problèmes à régler : la sécurité, les lois, et la fiabilité de l'IA.</li>
+              <li>Cette veille m'a appris à chercher des infos fiables et à les organiser.</li>
+            </ul>
           </Section>
         </div>
       </CardContent>
