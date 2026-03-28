@@ -37,7 +37,8 @@ export const projects: Project[] = [
         url: "/lovable-uploads/vva-accueil-hebergements.png",
         description: "Page d'accueil avec liste des hébergements disponibles et tarifs"
       }
-    ]
+    ],
+    pdfUrl: "/KEBE_BEMBA_VVA_1_1.pdf"
   },
   {
     id: 9,
