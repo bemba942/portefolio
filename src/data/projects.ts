@@ -149,7 +149,7 @@ export const projects: Project[] = [
       url: "https://images.unsplash.com/photo-1721322800607-8c38375eef04", 
       description: "Interface de gestion des salles"
     },
-    pdfUrl: "https://drive.google.com/file/d/13NNRYuFo13Gr2MjB5x-opLgeZ--qijHw/view?usp=drive_link"
+    pdfUrl: "/KEBE_BEMBA_RESERVATION_1.pdf"
   },
   {
     id: 5,
