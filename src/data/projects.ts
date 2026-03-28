@@ -162,6 +162,6 @@ export const projects: Project[] = [
       url: "/lovable-uploads/68516e7a-f071-408d-b2e5-72b5d86156c2.png",
       description: "Interface de gestion des animations du centre de vacances"
     },
-    pdfUrl: "https://drive.google.com/file/d/1jtLl50xpZDalNipQ6B2k-lK_ltEaKVqr/view?usp=sharing"
+    pdfUrl: "/KEBE_BEMBA_VVA_1_1.pdf"
   }
 ];
