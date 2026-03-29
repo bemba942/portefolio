@@ -110,7 +110,7 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "Gestion d'un zoo",
-    description: "Application web permettant de gérer un zoo avec affichage de la liste des animaux, modifications de leurs informations, recherche et suppression d'un animal.",
+    description: "Liste des animaux • Ajout / Modification / Suppression • Recherche • Interface web",
     image: "/lovable-uploads/0b161f11-61e3-4eef-ada0-83062db2140d.png",
     technologies: ["PHP", "MySQL", "HTML/CSS"],
     githubUrl: "http://bemba942.github.io/projet/",
