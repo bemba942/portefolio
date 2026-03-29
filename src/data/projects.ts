@@ -134,11 +134,7 @@ export const projects: Project[] = [
   {
     id: 3,
     title: "Actualité en ligne (News API)",
-    description: `Application WPF en C# intégrant l'API NewsAPI pour fournir des actualités en temps réel. Fonctionnalités clés :
-    - Authentification des utilisateurs
-    - Filtrage par catégorie et recherche par mots-clés
-    - Intégration API REST avec NewsAPI
-    - Système de favoris avec persistance MySQL`,
+    description: "Actualités temps réel • API REST NewsAPI • Authentification • Filtrage par catégorie • Favoris • Base MySQL",
     image: "/lovable-uploads/c73df2c8-ae75-48e4-a5e5-af6410a7089f.png",
     technologies: ["C#", "NewsAPI", "MySQL", "XAML", "REST API"],
     githubUrl: "http://bemba942.github.io/projet/",
