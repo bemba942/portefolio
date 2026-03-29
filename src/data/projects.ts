@@ -159,7 +159,7 @@ export const projects: Project[] = [
   {
     id: 5,
     title: "Gestion de site de vacances",
-    description: "Réalisation d'une application web en PHP qui gère un site de vacances. Développée en Programmation Orientée Objet avec EasyPHP et gestion de la base de données MySQL.",
+    description: "Site de vacances • PHP orienté objet • EasyPHP • Base MySQL • Gestion des animations",
     image: "/lovable-uploads/68516e7a-f071-408d-b2e5-72b5d86156c2.png",
     technologies: ["PHP", "HTML/CSS", "MySQL"],
     githubUrl: "http://bemba942.github.io/projet/",
