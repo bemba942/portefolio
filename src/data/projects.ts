@@ -92,7 +92,7 @@ export const projects: Project[] = [
   {
     id: 6,
     title: "Stage Développement Web",
-    description: "Expérience professionnelle en développement web avec plusieurs projets, dont une application de quiz Unity avec Python et Kivy, ainsi qu'une interface de communication de type Discord.",
+    description: "Quiz Unity Python/Kivy • Interface type Discord • Développement web • Projets variés",
     image: "/lovable-uploads/bf5739fb-4d70-4573-b7ed-216578b83b45.png",
     technologies: ["Python", "Kivy", "Unity", "HTML/CSS", "JavaScript"],
     githubUrl: "http://bemba942.github.io/projet/",
