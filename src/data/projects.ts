@@ -24,7 +24,7 @@ export const projects: Project[] = [
   {
     id: 10,
     title: "Gestion VVA - Village Vacances",
-    description: "Application web de gestion d'un village vacances permettant la réservation d'hébergements et d'activités. Interface d'administration avec tableau de bord statistique, gestion des clients et suivi des réservations en temps réel.",
+    description: "Réservation d'hébergements • Gestion des activités • Tableau de bord admin • Suivi des clients • Statistiques en temps réel",
     image: "/lovable-uploads/vva-dashboard-admin.png",
     technologies: ["PHP", "MySQL", "HTML/CSS", "JavaScript"],
     githubUrl: "http://bemba942.github.io/projet/",
