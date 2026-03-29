@@ -146,7 +146,7 @@ export const projects: Project[] = [
   {
     id: 4,
     title: "Gestion des salles",
-    description: "Application client lourd développée en C# pour gérer une chaîne de salles avec gestion de la base de données MySQL.",
+    description: "Gestion de salles • Client lourd C# • Base de données MySQL • CRUD complet",
     image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
     technologies: ["C#", "MySQL", "XAML"],
     githubUrl: "http://bemba942.github.io/projet/",
