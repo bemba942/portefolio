@@ -1,10 +1,58 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Image, Github, FileText, Smartphone } from 'lucide-react';
+import { Image, Github, FileText, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { projects, Project } from '@/data/projects';
+
+const ScreenshotCarousel = ({ project }: { project: Project }) => {
+  const [current, setCurrent] = useState(0);
+  
+  const allScreenshots = [
+    ...(project.screenshot ? [project.screenshot] : []),
+    ...(project.additionalScreenshots || [])
+  ];
+
+  if (allScreenshots.length === 0) return null;
+
+  const prev = () => setCurrent((c) => (c - 1 + allScreenshots.length) % allScreenshots.length);
+  const next = () => setCurrent((c) => (c + 1) % allScreenshots.length);
+
+  return (
+    <div className="flex flex-col items-center gap-3">
+      <div className="relative w-full flex items-center justify-center min-h-[300px]">
+        {allScreenshots.length > 1 && (
+          <Button variant="ghost" size="icon" className="absolute left-0 z-10" onClick={prev}>
+            <ChevronLeft className="h-5 w-5" />
+          </Button>
+        )}
+        <img
+          src={allScreenshots[current].url}
+          alt={allScreenshots[current].description}
+          className="rounded-md max-h-[60vh] max-w-full object-contain mx-auto"
+        />
+        {allScreenshots.length > 1 && (
+          <Button variant="ghost" size="icon" className="absolute right-0 z-10" onClick={next}>
+            <ChevronRight className="h-5 w-5" />
+          </Button>
+        )}
+      </div>
+      <p className="text-sm text-muted-foreground text-center">{allScreenshots[current].description}</p>
+      {allScreenshots.length > 1 && (
+        <div className="flex gap-1.5">
+          {allScreenshots.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrent(i)}
+              className={`w-2 h-2 rounded-full transition-colors ${i === current ? 'bg-primary' : 'bg-muted-foreground/30'}`}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
 
 const Projects = () => {
   return (
@@ -62,58 +110,19 @@ const Projects = () => {
                   </Button>
                 )}
                 
-                {project.screenshot && (
+                {(project.screenshot || (project.additionalScreenshots && project.additionalScreenshots.length > 0)) && (
                   <Dialog>
                     <DialogTrigger asChild>
                       <Button variant="outline" size="sm">
                         <Image className="mr-2 h-4 w-4" />
-                        Capture d'écran
+                        Images
                       </Button>
                     </DialogTrigger>
-                    <DialogContent className="sm:max-w-md">
+                    <DialogContent className="sm:max-w-lg">
                       <DialogHeader>
                         <DialogTitle>{project.title}</DialogTitle>
-                        <DialogDescription>
-                          {project.screenshot.description}
-                        </DialogDescription>
                       </DialogHeader>
-                      <div className="flex items-center justify-center p-4">
-                        <img
-                          src={project.screenshot.url}
-                          alt={project.screenshot.description}
-                          className="rounded-md max-h-[70vh] w-auto"
-                        />
-                      </div>
-                    </DialogContent>
-                  </Dialog>
-                )}
-                
-                {project.additionalScreenshots && project.additionalScreenshots.length > 0 && (
-                  <Dialog>
-                    <DialogTrigger asChild>
-                      <Button variant="outline" size="sm">
-                        <Image className="mr-2 h-4 w-4" />
-                        Plus d'images
-                      </Button>
-                    </DialogTrigger>
-                    <DialogContent className="sm:max-w-md">
-                      <DialogHeader>
-                        <DialogTitle>{project.title} - Captures supplémentaires</DialogTitle>
-                      </DialogHeader>
-                      <div className="space-y-4">
-                        {project.additionalScreenshots.map((screenshot, index) => (
-                          <div key={index} className="flex flex-col space-y-2">
-                            <p className="text-sm text-muted-foreground">{screenshot.description}</p>
-                            <div className="flex items-center justify-center p-2">
-                              <img
-                                src={screenshot.url}
-                                alt={screenshot.description}
-                                className="rounded-md max-h-[70vh] w-auto"
-                              />
-                            </div>
-                          </div>
-                        ))}
-                      </div>
+                      <ScreenshotCarousel project={project} />
                     </DialogContent>
                   </Dialog>
                 )}
