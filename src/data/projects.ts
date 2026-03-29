@@ -66,6 +66,14 @@ export const projects: Project[] = [
       {
         url: "/lovable-uploads/stage-2025-hardware.jpeg",
         description: "Vue d'ensemble du matériel : PCB, câblage et composants électroniques"
+      },
+      {
+        url: "/lovable-uploads/stage-2025-table-aptar.jpg",
+        description: "Table interactive Aptar avec emplacements RFID lumineux"
+      },
+      {
+        url: "/lovable-uploads/stage-2025-unity-bar.jpeg",
+        description: "Site Unity Bar développé en Vue.js - Landing page avec événements et activités"
       }
     ]
   },
