@@ -122,7 +122,7 @@ export const projects: Project[] = [
   {
     id: 2,
     title: "Gestion de DVD",
-    description: "Application de gestion de collection de DVD permettant de cataloguer, rechercher et suivre les prêts de DVDs. Inclut des fonctionnalités de tri, filtrage et statistiques développées avec XAML.",
+    description: "Catalogue DVD • Recherche • Suivi des prêts • Tri / Filtrage • Statistiques",
     image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     technologies: ["C#", "MySQL", "XAML"],
     githubUrl: "http://bemba942.github.io/projet/",
