@@ -80,7 +80,7 @@ export const projects: Project[] = [
   {
     id: 8,
     title: "Projet de Stage: Système d'Information",
-    description: "Projet réalisé en stage portant sur la création d'un système d'information pour la gestion de ressources. Mise en place d'interfaces utilisateur intuitives et développement de fonctionnalités de suivi et de reporting.",
+    description: "Système d'information • Gestion de ressources • Interface utilisateur • Suivi • Reporting",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     githubUrl: "https://bemba942.github.io/projet/stage_projet/index.html",
