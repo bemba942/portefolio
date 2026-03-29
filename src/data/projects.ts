@@ -24,7 +24,7 @@ export const projects: Project[] = [
   {
     id: 10,
     title: "Gestion VVA - Village Vacances",
-    description: "Application web de gestion d'un village vacances permettant la réservation d'hébergements et d'activités. Interface d'administration avec tableau de bord statistique, gestion des clients et suivi des réservations en temps réel.",
+    description: "Réservation d'hébergements • Gestion des activités • Tableau de bord admin • Suivi des clients • Statistiques en temps réel",
     image: "/lovable-uploads/vva-dashboard-admin.png",
     technologies: ["PHP", "MySQL", "HTML/CSS", "JavaScript"],
     githubUrl: "http://bemba942.github.io/projet/",
@@ -43,7 +43,7 @@ export const projects: Project[] = [
   {
     id: 9,
     title: "Stage 2025: Prototype IoT & Développement Web",
-    description: "Projet prototype combinant électronique et développement web. Détection de produits via tags RFID (ronds et carrés), soudure de PCB, flashage et calibration des antennes. Développement d'un site pour bar en Node.js avec Vue.js. Environnement Linux avec Arduino, VS Code et GitLab.",
+    description: "Détection RFID • Soudure PCB • Calibration antennes • Site bar Vue.js/Node.js • Arduino • Environnement Linux • GitLab",
     image: "/lovable-uploads/stage-2025-table-rfid.jpeg",
     technologies: ["Linux", "Node.js", "Vue.js", "Arduino", "RFID", "Git"],
     screenshot: {
@@ -80,7 +80,7 @@ export const projects: Project[] = [
   {
     id: 8,
     title: "Projet de Stage: Système d'Information",
-    description: "Projet réalisé en stage portant sur la création d'un système d'information pour la gestion de ressources. Mise en place d'interfaces utilisateur intuitives et développement de fonctionnalités de suivi et de reporting.",
+    description: "Système d'information • Gestion de ressources • Interface utilisateur • Suivi • Reporting",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     githubUrl: "https://bemba942.github.io/projet/stage_projet/index.html",
@@ -92,7 +92,7 @@ export const projects: Project[] = [
   {
     id: 6,
     title: "Stage Développement Web",
-    description: "Expérience professionnelle en développement web avec plusieurs projets, dont une application de quiz Unity avec Python et Kivy, ainsi qu'une interface de communication de type Discord.",
+    description: "Quiz Unity Python/Kivy • Interface type Discord • Développement web • Projets variés",
     image: "/lovable-uploads/bf5739fb-4d70-4573-b7ed-216578b83b45.png",
     technologies: ["Python", "Kivy", "Unity", "HTML/CSS", "JavaScript"],
     githubUrl: "http://bemba942.github.io/projet/",
@@ -110,7 +110,7 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "Gestion d'un zoo",
-    description: "Application web permettant de gérer un zoo avec affichage de la liste des animaux, modifications de leurs informations, recherche et suppression d'un animal.",
+    description: "Liste des animaux • Ajout / Modification / Suppression • Recherche • Interface web",
     image: "/lovable-uploads/0b161f11-61e3-4eef-ada0-83062db2140d.png",
     technologies: ["PHP", "MySQL", "HTML/CSS"],
     githubUrl: "http://bemba942.github.io/projet/",
@@ -122,7 +122,7 @@ export const projects: Project[] = [
   {
     id: 2,
     title: "Gestion de DVD",
-    description: "Application de gestion de collection de DVD permettant de cataloguer, rechercher et suivre les prêts de DVDs. Inclut des fonctionnalités de tri, filtrage et statistiques développées avec XAML.",
+    description: "Catalogue DVD • Recherche • Suivi des prêts • Tri / Filtrage • Statistiques",
     image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     technologies: ["C#", "MySQL", "XAML"],
     githubUrl: "http://bemba942.github.io/projet/",
@@ -134,11 +134,7 @@ export const projects: Project[] = [
   {
     id: 3,
     title: "Actualité en ligne (News API)",
-    description: `Application WPF en C# intégrant l'API NewsAPI pour fournir des actualités en temps réel. Fonctionnalités clés :
-    - Authentification des utilisateurs
-    - Filtrage par catégorie et recherche par mots-clés
-    - Intégration API REST avec NewsAPI
-    - Système de favoris avec persistance MySQL`,
+    description: "Actualités temps réel • API REST NewsAPI • Authentification • Filtrage par catégorie • Favoris • Base MySQL",
     image: "/lovable-uploads/c73df2c8-ae75-48e4-a5e5-af6410a7089f.png",
     technologies: ["C#", "NewsAPI", "MySQL", "XAML", "REST API"],
     githubUrl: "http://bemba942.github.io/projet/",
@@ -150,7 +146,7 @@ export const projects: Project[] = [
   {
     id: 4,
     title: "Gestion des salles",
-    description: "Application client lourd développée en C# pour gérer une chaîne de salles avec gestion de la base de données MySQL.",
+    description: "Gestion de salles • Client lourd C# • Base de données MySQL • CRUD complet",
     image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
     technologies: ["C#", "MySQL", "XAML"],
     githubUrl: "http://bemba942.github.io/projet/",
@@ -163,7 +159,7 @@ export const projects: Project[] = [
   {
     id: 5,
     title: "Gestion de site de vacances",
-    description: "Réalisation d'une application web en PHP qui gère un site de vacances. Développée en Programmation Orientée Objet avec EasyPHP et gestion de la base de données MySQL.",
+    description: "Site de vacances • PHP orienté objet • EasyPHP • Base MySQL • Gestion des animations",
     image: "/lovable-uploads/68516e7a-f071-408d-b2e5-72b5d86156c2.png",
     technologies: ["PHP", "HTML/CSS", "MySQL"],
     githubUrl: "http://bemba942.github.io/projet/",
