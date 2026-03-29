@@ -43,7 +43,7 @@ export const projects: Project[] = [
   {
     id: 9,
     title: "Stage 2025: Prototype IoT & Développement Web",
-    description: "Projet prototype combinant électronique et développement web. Détection de produits via tags RFID (ronds et carrés), soudure de PCB, flashage et calibration des antennes. Développement d'un site pour bar en Node.js avec Vue.js. Environnement Linux avec Arduino, VS Code et GitLab.",
+    description: "Détection RFID • Soudure PCB • Calibration antennes • Site bar Vue.js/Node.js • Arduino • Environnement Linux • GitLab",
     image: "/lovable-uploads/stage-2025-table-rfid.jpeg",
     technologies: ["Linux", "Node.js", "Vue.js", "Arduino", "RFID", "Git"],
     screenshot: {
