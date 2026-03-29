@@ -62,8 +62,7 @@ const VeilleCard = () => {
             <div className="space-y-2 mt-1">
               <p className="font-medium text-foreground text-xs">🔎 Sources :</p>
               <div className="flex flex-wrap gap-1.5">
-                <LinkTag href="https://www.theverge.com/transportation">The Verge</LinkTag>
-                <LinkTag href="https://electrek.co/">Electrek</LinkTag>
+                
                 <LinkTag href="https://www.numerama.com/tag/voiture-autonome/">Numerama</LinkTag>
                 <LinkTag href="https://www.01net.com/tag/voiture-autonome/">01net</LinkTag>
                 <LinkTag href="https://waymo.com/blog/">Blog Waymo</LinkTag>
