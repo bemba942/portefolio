@@ -183,6 +183,35 @@ const About = () => {
             </div>
           </div>
         </div>
+        <div className="mt-16 animate-fade-up">
+          <div className="flex items-center mb-6">
+            <div className="icon-container bg-primary text-primary-foreground mr-3">
+              <Award className="h-5 w-5" />
+            </div>
+            <h3 className="text-2xl font-display font-bold">Certifications</h3>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-card rounded-2xl p-6 border-2 border-primary/20 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-start justify-between mb-3">
+                <div>
+                  <h4 className="text-xl font-bold">Certification Pix</h4>
+                  <p className="text-sm text-muted-foreground">Lycée Parc de Vilgénis · 23/02/2026</p>
+                </div>
+                <span className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary">Niveau 322</span>
+              </div>
+              <p className="text-muted-foreground text-sm mb-4">
+                Certification officielle des compétences numériques — niveau <strong>Indépendant</strong> : navigation web, collaboration, bureautique, sécurité numérique et résolution de problèmes courants.
+              </p>
+              <Button variant="outline" size="sm" asChild>
+                <a href="/certification-pix-bemba-kebe.pdf" target="_blank" rel="noopener noreferrer">
+                  <FileDown className="mr-2 h-4 w-4" />
+                  Voir l'attestation
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );
