@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { GraduationCap, Briefcase, Headset, FileDown, Code, Shield } from 'lucide-react';
+import { GraduationCap, Briefcase, Headset, FileDown, Code, Shield, Award } from 'lucide-react';
 import TimelineSection from './about/TimelineSection';
 import VeilleCard from './about/VeilleCard';
 import InterestsSection from './about/InterestsSection';
