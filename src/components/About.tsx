@@ -201,14 +201,17 @@ const About = () => {
                 <span className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary">322 pts</span>
               </div>
               <p className="text-muted-foreground text-sm mb-3">
-                Certification officielle des compétences numériques — niveau <strong>Indépendant</strong>.
+                Compétences numériques — niveau <strong>Indépendant</strong>
               </p>
-              <ul className="text-sm text-muted-foreground space-y-1 mb-4 list-disc list-inside">
-                <li>Choix : valider mes compétences numériques transversales reconnues par l'État.</li>
-                <li>Acquis : recherche web, collaboration en ligne, bureautique, sécurité, résolution de problèmes.</li>
-                <li>Preuve : attestation officielle Pix avec QR code de vérification (app.pix.fr).</li>
-                <li>Apport pro : socle numérique indispensable pour tout métier de l'informatique.</li>
-              </ul>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Pourquoi : preuve officielle</span>
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Recherche web</span>
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Collaboration</span>
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Bureautique</span>
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Sécurité</span>
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">QR vérif. Pix</span>
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Base du métier IT</span>
+              </div>
               <div className="mt-auto">
                 <Button variant="outline" size="sm" asChild>
                   <a href="/certification-pix-bemba-kebe.pdf" target="_blank" rel="noopener noreferrer">
