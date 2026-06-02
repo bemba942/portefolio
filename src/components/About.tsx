@@ -190,24 +190,87 @@ const About = () => {
             </div>
             <h3 className="text-2xl font-display font-bold">Certifications</h3>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-card rounded-2xl p-6 border-2 border-primary/20 shadow-lg hover:shadow-xl transition-shadow">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Pix */}
+            <div className="bg-card rounded-2xl p-6 border-2 border-primary/20 shadow-lg hover:shadow-xl transition-shadow flex flex-col">
               <div className="flex items-start justify-between mb-3">
                 <div>
                   <h4 className="text-xl font-bold">Certification Pix</h4>
                   <p className="text-sm text-muted-foreground">Lycée Parc de Vilgénis · 23/02/2026</p>
                 </div>
-                <span className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary">Niveau 322</span>
+                <span className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary">322 pts</span>
               </div>
-              <p className="text-muted-foreground text-sm mb-4">
-                Certification officielle des compétences numériques — niveau <strong>Indépendant</strong> : navigation web, collaboration, bureautique, sécurité numérique et résolution de problèmes courants.
+              <p className="text-muted-foreground text-sm mb-3">
+                Certification officielle des compétences numériques — niveau <strong>Indépendant</strong>.
               </p>
-              <Button variant="outline" size="sm" asChild>
-                <a href="/certification-pix-bemba-kebe.pdf" target="_blank" rel="noopener noreferrer">
-                  <FileDown className="mr-2 h-4 w-4" />
-                  Voir l'attestation
-                </a>
-              </Button>
+              <ul className="text-sm text-muted-foreground space-y-1 mb-4 list-disc list-inside">
+                <li>Choix : valider mes compétences numériques transversales reconnues par l'État.</li>
+                <li>Acquis : recherche web, collaboration en ligne, bureautique, sécurité, résolution de problèmes.</li>
+                <li>Preuve : attestation officielle Pix avec QR code de vérification (app.pix.fr).</li>
+                <li>Apport pro : socle numérique indispensable pour tout métier de l'informatique.</li>
+              </ul>
+              <div className="mt-auto">
+                <Button variant="outline" size="sm" asChild>
+                  <a href="/certification-pix-bemba-kebe.pdf" target="_blank" rel="noopener noreferrer">
+                    <FileDown className="mr-2 h-4 w-4" />
+                    Voir l'attestation
+                  </a>
+                </Button>
+              </div>
+            </div>
+
+            {/* RGPD */}
+            <div className="bg-card rounded-2xl p-6 border-2 border-primary/20 shadow-lg hover:shadow-xl transition-shadow flex flex-col">
+              <div className="flex items-start justify-between mb-3">
+                <div>
+                  <h4 className="text-xl font-bold">Certification RGPD</h4>
+                  <p className="text-sm text-muted-foreground">CNIL · Atelier RGPD</p>
+                </div>
+                <span className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary">Données</span>
+              </div>
+              <p className="text-muted-foreground text-sm mb-3">
+                Formation sur la protection des données personnelles et la conformité réglementaire.
+              </p>
+              <ul className="text-sm text-muted-foreground space-y-1 mb-4 list-disc list-inside">
+                <li>Choix : la protection des données est une obligation pour toute organisation.</li>
+                <li>Acquis : consentement, droit à l'effacement, droit d'accès, responsabilités des entreprises.</li>
+                <li>Preuve : capable d'identifier les données personnelles et les obligations légales liées.</li>
+                <li>Apport pro : essentiel en développement web et gestion de bases de données.</li>
+              </ul>
+              <div className="mt-auto">
+                <Button variant="outline" size="sm" asChild>
+                  <a href="https://bemba942.github.io/projet/" target="_blank" rel="noopener noreferrer">
+                    Voir sur mon site
+                  </a>
+                </Button>
+              </div>
+            </div>
+
+            {/* ANSSI */}
+            <div className="bg-card rounded-2xl p-6 border-2 border-primary/20 shadow-lg hover:shadow-xl transition-shadow flex flex-col">
+              <div className="flex items-start justify-between mb-3">
+                <div>
+                  <h4 className="text-xl font-bold">MOOC ANSSI</h4>
+                  <p className="text-sm text-muted-foreground">SecNumacadémie · Cybersécurité</p>
+                </div>
+                <span className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary">Sécurité</span>
+              </div>
+              <p className="text-muted-foreground text-sm mb-3">
+                Formation officielle de l'autorité nationale française en sécurité des systèmes d'information.
+              </p>
+              <ul className="text-sm text-muted-foreground space-y-1 mb-4 list-disc list-inside">
+                <li>Choix : renforcer mes connaissances face à la multiplication des cyberattaques.</li>
+                <li>Acquis : authentification, mots de passe, sauvegardes, phishing, malwares, sécurité réseau.</li>
+                <li>Preuve : application en TP (mots de passe complexes, sécurisation des accès).</li>
+                <li>Apport pro : reconnue par l'ANSSI, preuve de sensibilisation à la sécurité numérique.</li>
+              </ul>
+              <div className="mt-auto">
+                <Button variant="outline" size="sm" asChild>
+                  <a href="https://bemba942.github.io/projet/" target="_blank" rel="noopener noreferrer">
+                    Voir sur mon site
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
