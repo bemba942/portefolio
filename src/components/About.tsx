@@ -261,14 +261,17 @@ const About = () => {
                 <span className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary">Sécurité</span>
               </div>
               <p className="text-muted-foreground text-sm mb-3">
-                Formation officielle de l'autorité nationale française en sécurité des systèmes d'information.
+                Cybersécurité — référence nationale
               </p>
-              <ul className="text-sm text-muted-foreground space-y-1 mb-4 list-disc list-inside">
-                <li>Choix : renforcer mes connaissances face à la multiplication des cyberattaques.</li>
-                <li>Acquis : authentification, mots de passe, sauvegardes, phishing, malwares, sécurité réseau.</li>
-                <li>Preuve : application en TP (mots de passe complexes, sécurisation des accès).</li>
-                <li>Apport pro : reconnue par l'ANSSI, preuve de sensibilisation à la sécurité numérique.</li>
-              </ul>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Pourquoi : cyberattaques en hausse</span>
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Mots de passe</span>
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Phishing</span>
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Malwares</span>
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Sauvegardes</span>
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Sécurité réseau</span>
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Appliqué en TP</span>
+              </div>
               <div className="mt-auto">
                 <Button variant="outline" size="sm" asChild>
                   <a href="https://bemba942.github.io/projet/" target="_blank" rel="noopener noreferrer">
