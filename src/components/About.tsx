@@ -232,14 +232,16 @@ const About = () => {
                 <span className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary">Données</span>
               </div>
               <p className="text-muted-foreground text-sm mb-3">
-                Formation sur la protection des données personnelles et la conformité réglementaire.
+                Protection des données personnelles
               </p>
-              <ul className="text-sm text-muted-foreground space-y-1 mb-4 list-disc list-inside">
-                <li>Choix : la protection des données est une obligation pour toute organisation.</li>
-                <li>Acquis : consentement, droit à l'effacement, droit d'accès, responsabilités des entreprises.</li>
-                <li>Preuve : capable d'identifier les données personnelles et les obligations légales liées.</li>
-                <li>Apport pro : essentiel en développement web et gestion de bases de données.</li>
-              </ul>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Pourquoi : obligation légale</span>
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Consentement</span>
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Droit d'accès</span>
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Droit à l'oubli</span>
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Données perso</span>
+                <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Utile : web + BDD</span>
+              </div>
               <div className="mt-auto">
                 <Button variant="outline" size="sm" asChild>
                   <a href="https://bemba942.github.io/projet/" target="_blank" rel="noopener noreferrer">
