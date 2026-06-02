@@ -281,6 +281,24 @@ const About = () => {
               </div>
             </div>
           </div>
+
+          {/* Conclusion certifications */}
+          <div className="mt-8 bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20 rounded-2xl p-6 animate-fade-up">
+            <h4 className="text-lg font-bold text-primary mb-3">Pourquoi ces certifications comptent</h4>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Base incontournable du métier IT</span>
+              <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">RGPD = obligation légale pour tout site</span>
+              <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">ANSSI = référence nationale cybersécurité</span>
+              <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Sensibilisation concrète en TP</span>
+              <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Compétences valorisables en entreprise</span>
+              <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">PIX = preuve niveau officiel</span>
+              <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Protection des données</span>
+              <span className="px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground">Réactivité face aux menaces</span>
+            </div>
+            <p className="text-sm text-muted-foreground mt-3">
+              Ces 3 certifications couvrent les piliers essentiels du métier de développeur : compétences numériques (Pix), respect de la réglementation (RGPD) et sécurité des systèmes d'information (ANSSI). Elles prouvent ma capacité à coder en respectant les normes et à protéger les données des utilisateurs.
+            </p>
+          </div>
         </div>
 
       </div>
